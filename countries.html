@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly Immigration</title>
+
+    <link rel="stylesheet" href="css/countries.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">Stackly</div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="countries.html">Countries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="#" class="btn">Free Assessment</a>
+
+      <div class="menu-btn">☰</div>
+    </nav>
+
+  
+<!-- HERO SECTION -->
+<section class="countries-hero">
+
+  <!-- floating glow -->
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+
+  <!-- background overlay -->
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <div class="badge reveal up">🌍 Explore Global Opportunities</div>
+
+    <h1 class="reveal up">
+      Discover Your Future Across <span>20+ Countries</span>
+    </h1>
+
+    <p class="reveal up">
+      Work, study, settle, and travel across the world with expert immigration guidance.
+      Choose your destination and start your journey today.
+    </p>
+
+    <div class="hero-buttons reveal up">
+      <a href="#" class="btn-primary">Explore Countries</a>
+      <a href="#" class="btn-outline">Free Eligibility Check</a>
+    </div>
+
+    <div class="hero-stats">
+
+      <div class="stat reveal left">
+        <h3>20+</h3>
+        <p>Countries Covered</p>
+      </div>
+
+      <div class="stat reveal up">
+        <h3>5000+</h3>
+        <p>Successful Visas</p>
+      </div>
+
+      <div class="stat reveal right">
+        <h3>95%</h3>
+        <p>Approval Rate</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- decorative plane animation -->
+  <div class="plane">✈</div>
+
+</section>
+
+<!-- MAP -->
+<section class="world-map-section">
+
+  <h2 class="reveal up">Explore Global Destinations</h2>
+  <p class="reveal up">
+    Click on any country to view visa options, processing time, and opportunities.
+  </p>
+
+  <div class="map-container">
+
+    <!-- LEFT: MAP -->
+    <div class="map-box reveal left">
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" class="world-map">
+
+      <!-- clickable hotspots -->
+      <div class="pin canada" onclick="showCountry('Canada')">🇨🇦</div>
+      <div class="pin usa" onclick="showCountry('USA')">🇺🇸</div>
+      <div class="pin uk" onclick="showCountry('UK')">🇬🇧</div>
+      <div class="pin australia" onclick="showCountry('Australia')">🇦🇺</div>
+      <div class="pin germany" onclick="showCountry('Germany')">🇩🇪</div>
+
+    </div>
+
+    <!-- RIGHT: INFO PANEL -->
+    <div class="info-panel reveal right" id="infoPanel">
+
+      <h3>Select a Country</h3>
+      <p>Click on the map to view details</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TOP DESTINATION GRID -->
+<section class="featured-destinations">
+
+  <h2 class="reveal up">Top Immigration Destinations</h2>
+  <p class="reveal up">
+    Explore the most in-demand countries for study, work, and permanent residency.
+  </p>
+
+  <div class="destination-grid">
+
+    <!-- BIG FEATURE CARD -->
+    <div class="dest-card big reveal left">
+      <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1200&q=80">
+      <div class="overlay">
+        <h3>Canada 🇨🇦</h3>
+        <p>PR • Work • Student Visa</p>
+      </div>
+    </div>
+
+    <!-- MEDIUM -->
+    <div class="dest-card reveal right">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
+      <div class="overlay">
+        <h3>USA 🇺🇸</h3>
+        <p>Study • H1B • Green Card</p>
+      </div>
+    </div>
+
+    <!-- SMALL -->
+    <div class="dest-card reveal up">
+      <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=800&q=80">
+      <div class="overlay">
+        <h3>UK 🇬🇧</h3>
+        <p>Study • Work Visa</p>
+      </div>
+    </div>
+
+    <!-- SMALL -->
+    <div class="dest-card reveal zoom">
+      <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80">
+      <div class="overlay">
+        <h3>Australia 🇦🇺</h3>
+        <p>Skilled Migration</p>
+      </div>
+    </div>
+
+    <!-- SMALL -->
+    <div class="dest-card reveal left">
+      <img src="https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=800&q=80">
+      <div class="overlay">
+        <h3>Germany 🇩🇪</h3>
+        <p>Job Seeker Visa</p>
+      </div>
+    </div>
+
+    <!-- SMALL -->
+    <div class="dest-card reveal right">
+      <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=800&q=80">
+      <div class="overlay">
+        <h3>New Zealand 🇳🇿</h3>
+        <p>Work • PR Pathway</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COUNTRY CATERORY SECTION -->
+<section class="country-category reveal">
+
+  <div class="category-container">
+
+    <!-- LEFT IMAGE SIDE -->
+    <div class="category-media reveal left">
+      <img src="IMAGE_URL" alt="Category Image">
+      <div class="media-glow"></div>
+    </div>
+
+    <!-- RIGHT CONTENT SIDE -->
+    <div class="category-content reveal right">
+
+      <h2 class="category-title">🎓 Study Abroad Destinations</h2>
+
+      <p class="category-subtitle">
+        Build your future with world-class education and global exposure.
+      </p>
+
+      <ul class="country-list">
+        <li>🇨🇦 Canada – Top universities & PR pathway</li>
+        <li>🇬🇧 UK – Short courses & elite education</li>
+        <li>🇦🇺 Australia – High-quality education system</li>
+        <li>🇩🇪 Germany – Low-cost / free education options</li>
+      </ul>
+
+      <div class="category-stats">
+        <div><span>95%</span><p>Visa Success</p></div>
+        <div><span>4-8 Weeks</span><p>Processing</p></div>
+        <div><span>Top 4</span><p>Destinations</p></div>
+      </div>
+
+      <a href="#" class="category-btn">Explore Study Visas</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COUNTRY COMPARISION -->
+<section class="compare reveal">
+
+  <h2 class="compare-title reveal up">📊 Country Comparison Dashboard</h2>
+  <p class="compare-subtitle reveal up">
+    Compare top destinations and choose the best country for your future.
+  </p>
+
+  <div class="compare-container">
+
+    <!-- COUNTRY 1 -->
+    <div class="country-box reveal left">
+      <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80">
+      <h3>Canada 🇨🇦</h3>
+
+      <div class="bar">
+        <span>Visa Success</span>
+        <div class="progress"><div style="width:92%"></div></div>
+      </div>
+
+      <div class="bar">
+        <span>Processing Time</span>
+        <div class="progress"><div style="width:75%"></div></div>
+      </div>
+
+      <div class="bar">
+        <span>Job Demand</span>
+        <div class="progress"><div style="width:88%"></div></div>
+      </div>
+
+    </div>
+
+    <!-- COUNTRY 2 -->
+    <div class="country-box reveal up">
+      <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80">
+      <h3>Australia 🇦🇺</h3>
+
+      <div class="bar">
+        <span>Visa Success</span>
+        <div class="progress"><div style="width:85%"></div></div>
+      </div>
+
+      <div class="bar">
+        <span>Processing Time</span>
+        <div class="progress"><div style="width:70%"></div></div>
+      </div>
+
+      <div class="bar">
+        <span>Job Demand</span>
+        <div class="progress"><div style="width:90%"></div></div>
+      </div>
+
+    </div>
+
+    <!-- COUNTRY 3 -->
+    <div class="country-box reveal right">
+      <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=800&q=80">
+      <h3>UK 🇬🇧</h3>
+
+      <div class="bar">
+        <span>Visa Success</span>
+        <div class="progress"><div style="width:80%"></div></div>
+      </div>
+
+      <div class="bar">
+        <span>Processing Time</span>
+        <div class="progress"><div style="width:65%"></div></div>
+      </div>
+
+      <div class="bar">
+        <span>Job Demand</span>
+        <div class="progress"><div style="width:85%"></div></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SUCCESS STORY BY COUNTRY -->
+<section class="success reveal">
+
+  <h2 class="success-title reveal up">🌍 Success Stories by Country</h2>
+  <p class="success-subtitle reveal up">
+    Real clients. Real approvals. Real dreams achieved across the world.
+  </p>
+
+  <div class="success-grid">
+
+    <!-- STORY CARD -->
+    <div class="story-card reveal left">
+
+      <div class="story-header">
+        <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80">
+        <div class="badge">Canada 🇨🇦</div>
+      </div>
+
+      <div class="story-content">
+        <h3>Rahul Mehta</h3>
+        <p class="role">Student Visa → Permanent Residency</p>
+
+        <p class="story-text typing"
+           data-text="I got my Canada student visa within 6 weeks. Today I’m working part-time and planning my PR pathway with Stackly guidance.">
+        </p>
+
+        <div class="story-stats">
+          <span>✔ Approved in 42 Days</span>
+          <span>✔ IELTS 6.5 Accepted</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STORY CARD -->
+    <div class="story-card reveal up">
+
+      <div class="story-header">
+        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80">
+        <div class="badge">Australia 🇦🇺</div>
+      </div>
+
+      <div class="story-content">
+        <h3>Anjali Sharma</h3>
+        <p class="role">Work Visa → Skilled Migration</p>
+
+        <p class="story-text typing"
+           data-text="I was rejected once, but Stackly restructured my profile and I got approved for Australia skilled visa in second attempt.">
+        </p>
+
+        <div class="story-stats">
+          <span>✔ Re-applied Success</span>
+          <span>✔ Job Offer Secured</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STORY CARD -->
+    <div class="story-card reveal right">
+
+      <div class="story-header">
+        <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=800&q=80">
+        <div class="badge">UK 🇬🇧</div>
+      </div>
+
+      <div class="story-content">
+        <h3>David Wilson</h3>
+        <p class="role">Study Visa → Graduate Work Permit</p>
+
+        <p class="story-text typing"
+           data-text="From India to UK university, Stackly helped me with documentation and interview prep. Now I’m working in London.">
+        </p>
+
+        <div class="story-stats">
+          <span>✔ Tier 4 Visa Approved</span>
+          <span>✔ Interview Success</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="final-cta reveal">
+
+  <div class="cta-glow g1"></div>
+  <div class="cta-glow g2"></div>
+
+  <div class="cta-container">
+
+    <h2 class="cta-title reveal up">
+      🌍 Your Future Abroad Starts With One Decision
+    </h2>
+
+    <p class="cta-subtitle reveal up">
+      Thousands of students, workers, and families have already transformed their lives.  
+      Now it’s your turn to take the first step.
+    </p>
+
+    <div class="cta-stats">
+
+      <div class="cta-stat reveal left">
+        <h3>5000+</h3>
+        <p>Successful Visas</p>
+      </div>
+
+      <div class="cta-stat reveal up">
+        <h3>95%</h3>
+        <p>Approval Rate</p>
+      </div>
+
+      <div class="cta-stat reveal right">
+        <h3>20+</h3>
+        <p>Countries Covered</p>
+      </div>
+
+    </div>
+
+    <div class="cta-buttons reveal up">
+
+      <a href="#" class="btn-primary">🎯 Free Eligibility Check</a>
+      <a href="#" class="btn-outline">📞 Talk to Expert</a>
+
+    </div>
+
+    <p class="cta-note reveal up">
+      ⚡ Limited slots available for this week consultation
+    </p>
+
+  </div>
+
+</section>
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- BRAND INFO -->
+        <div class="footer-box reveal left">
+            <h2>Stackly Immigration</h2>
+            <p>
+                Your trusted global immigration partner helping students,
+                professionals, and families achieve their dreams abroad.
+            </p>
+
+            <div class="socials">
+                <a href="#">FB</a>
+                <a href="#">TE</a>
+                <a href="#">TW</a>
+                <a href="#">YT</a>
+            </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-box reveal up">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-box reveal right">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Student Visa</li>
+                <li>Work Visa</li>
+                <li>PR Assistance</li>
+                <li>Business Visa</li>
+                <li>Tourist Visa</li>
+            </ul>
+        </div>
+
+        <!-- CONTACT + NEWSLETTER -->
+        <div class="footer-box reveal zoom">
+            <h3>Contact Us</h3>
+
+            <p>📍 Mumbai, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉ info@Stackly.com</p>
+
+            <div class="newsletter">
+                <input type="email" placeholder="Enter email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bottom reveal up">
+        <p>© 2026 Stackly Immigration. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+    <script src="js/countries.js"></script>
+  </body>
+</html>
