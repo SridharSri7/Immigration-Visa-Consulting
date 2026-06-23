@@ -507,6 +507,87 @@ cursor:pointer;
     }
 }
 
+/* =========== ABOUT MISSION ========== */
+.about-mission{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+    
+    
+}
+
+/* left side */
+.mission-left .kicker{
+    color: #38bdf8;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.mission-left h2{
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    line-height: 1.3;
+}
+
+.mission-left p{
+    opacity: 0.75;
+    line-height: 1.7;
+}
+
+/* right side cards */
+.mission-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.value-card{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 1.4rem;
+    border-radius: 16px;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.value-card h3{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.value-card p{
+    font-size: 0.9rem;
+    opacity: 0.75;
+    line-height: 1.5;
+}
+
+/* hover effect */
+.value-card:hover{
+    transform: translateY(-6px);
+    border-color: rgba(56,189,248,0.4);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* responsive */
+@media (max-width: 900px){
+    .about-mission{
+        grid-template-columns: 1fr;
+    }
+
+    .mission-right{
+        grid-template-columns: 1fr;
+    }
+
+    .mission-left h2{
+        font-size: 2rem;
+    }
+}
+
 /* =========== OUR TEAM =========== */
 /* ================= TEAM SECTION ================= */
 
@@ -1026,3 +1107,4 @@ cursor:pointer;
         flex-direction:column;
     }
 }
+

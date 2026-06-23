@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/admin-dashboard.css">
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar admin">
+
+        <h2>Admin Panel</h2>
+
+        <a href="#" onclick="showSection('dashboard')">📊 Dashboard</a>
+        <a href="#" onclick="showSection('users')">👤 User Management</a>
+        <a href="#" onclick="showSection('applications')">🧾 View Application</a>
+        <a href="#" onclick="showSection('leads')">💬 Enquiries & Leads</a>
+        <a href="#" onclick="showSection('content')">⚙️ Content Control</a>
+
+        <button class="logout-btn" onclick="logout()">
+            <span>🚪</span> Logout
+        </button>
+
+    </div>
+
+    <!-- CONTENT AREA -->
+    <div class="main-content">
+
+        <div class="topbar">
+
+            <div class="topbar-left">
+                <h3>Admin Dashboard</h3>
+            </div>
+
+            <div class="topbar-right">
+        
+                <div class="user-box">
+                    <img src="https://i.pravatar.cc/40" id="userAvatar" alt="avatar">
+
+                    <div class="user-info">
+                        <span id="userName">Admin Name</span>
+                        <small id="userEmail">admin@gmail.com</small>
+                        <small id="userRole">Role: Admin</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+<!-- DASHBOARD MODULE -->
+<div id="dashboard" class="section active">
+
+    <!-- HEADER -->
+    <div class="dash-header">
+        <h2 class="reveal-left">📊 Dashboard Overview</h2>
+        <p class="reveal-right">Welcome back! Here’s what’s happening in your immigration system today.</p>
+    </div>
+
+    <!-- QUICK STATS -->
+    <div class="dash-stats">
+
+        <div class="dash-card reveal-zoom">
+            <h3>👤 Total Users</h3>
+            <h2>1,248</h2>
+        </div>
+
+        <div class="dash-card reveal-zoom">
+            <h3>🧾 Applications</h3>
+            <h2>532</h2>
+        </div>
+
+        <div class="dash-card reveal-zoom">
+            <h3>✅ Approved</h3>
+            <h2>389</h2>
+        </div>
+
+        <div class="dash-card reveal-zoom">
+            <h3>⏳ Pending</h3>
+            <h2>97</h2>
+        </div>
+
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="dash-grid">
+
+        <!-- LEFT: ACTIVITY -->
+        <div class="dash-box reveal-LEFT">
+
+            <h3>🔔 Recent Activity</h3>
+
+            <ul class="activity-list">
+                <li>📩 New enquiry from Rahul Sharma</li>
+                <li>🧾 Visa application submitted (Canada)</li>
+                <li>✅ Application approved (Germany Work Visa)</li>
+                <li>⚠️ Document missing for Priya Singh</li>
+                <li>💬 New consultation booked</li>
+            </ul>
+
+        </div>
+
+        <!-- RIGHT: QUICK ACTIONS -->
+        <div class="dash-box reveal-right">
+
+            <h3>⚡ Quick Actions</h3>
+
+            <button class="action-btn">+ Add User</button>
+            <button class="action-btn">🧾 New Application</button>
+            <button class="action-btn">💬 View Leads</button>
+            <button class="action-btn">⚙️ Manage Content</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- USER MANAGEMENT MODULE -->
+<section id="users" class="section">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2>👤 User Management</h2>
+        <p>Manage all registered users, verify accounts, and control access.</p>
+    </div>
+
+    <!-- SEARCH + FILTER -->
+    <div class="user-controls reveal-zoom">
+
+        <input type="text" placeholder="🔍 Search user..." class="search-box">
+
+        <select class="filter-box">
+            <option>All Users</option>
+            <option>Active</option>
+            <option>Pending</option>
+            <option>Blocked</option>
+        </select>
+
+        <button class="action-btn">➕ Add User</button>
+
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-wrapper reveal-up">
+
+        <table class="user-table">
+
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                    <th>Status</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr class="reveal-left">
+                    <td>
+                        <div class="user-info">
+                            <img src="https://i.pravatar.cc/40?img=1">
+                            Rahul Sharma
+                        </div>
+                    </td>
+                    <td>rahul@gmail.com</td>
+                    <td>India</td>
+                    <td><span class="status active">Active</span></td>
+                    <td>User</td>
+                    <td>
+                        <button class="btn view">View</button>
+                        <button class="btn edit">Edit</button>
+                        <button class="btn block">Block</button>
+                    </td>
+                </tr>
+
+                <tr class="reveal-right">
+                    <td>
+                        <div class="user-info">
+                            <img src="https://i.pravatar.cc/40?img=2">
+                            Priya Mehta
+                        </div>
+                    </td>
+                    <td>priya@gmail.com</td>
+                    <td>UAE</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td>User</td>
+                    <td>
+                        <button class="btn view">View</button>
+                        <button class="btn edit">Edit</button>
+                        <button class="btn block">Block</button>
+                    </td>
+                </tr>
+
+                <tr class="reveal-left">
+                    <td>
+                        <div class="user-info">
+                            <img src="https://i.pravatar.cc/40?img=3">
+                            John Doe
+                        </div>
+                    </td>
+                    <td>john@gmail.com</td>
+                    <td>USA</td>
+                    <td><span class="status blocked">Blocked</span></td>
+                    <td>User</td>
+                    <td>
+                        <button class="btn view">View</button>
+                        <button class="btn edit">Edit</button>
+                        <button class="btn block">Unblock</button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- APPLICATION CONTENT MODULE -->
+
+<section id="applications" class="section">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2>🧾 View Applications</h2>
+        <p>Review complete visa applications, documents, and approval status.</p>
+    </div>
+
+    <!-- APPLICATION CARDS -->
+    <div class="app-grid">
+
+        <!-- LEFT PANEL -->
+        <div class="app-card reveal-left">
+
+            <h3>👤 Applicant Details</h3>
+
+            <div class="app-row">
+                <span>Name:</span> Rahul Sharma
+            </div>
+
+            <div class="app-row">
+                <span>Email:</span> rahul@gmail.com
+            </div>
+
+            <div class="app-row">
+                <span>Phone:</span> +91 98765 43210
+            </div>
+
+            <div class="app-row">
+                <span>Country:</span> India
+            </div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="app-card reveal-right">
+
+            <h3>🧾 Application Info</h3>
+
+            <div class="app-row">
+                <span>Visa Type:</span> Student Visa
+            </div>
+
+            <div class="app-row">
+                <span>Destination:</span> Canada
+            </div>
+
+            <div class="app-row">
+                <span>Submitted:</span> 20 June 2026
+            </div>
+
+            <div class="app-row">
+                <span>Status:</span> <span class="status pending">Pending</span>
+            </div>
+
+        </div>
+
+        <!-- FULL WIDTH -->
+        <div class="app-docs reveal-up">
+
+            <h3>📂 Uploaded Documents</h3>
+
+            <div class="doc-grid">
+
+                <div class="doc-card reveal-zoom">
+                    <p>📘 Passport</p>
+                    <button>View</button>
+                </div>
+
+                <div class="doc-card reveal-zoom">
+                    <p>🎓 Education Certificate</p>
+                    <button>View</button>
+                </div>
+
+                <div class="doc-card reveal-zoom">
+                    <p>💰 Bank Statement</p>
+                    <button>View</button>
+                </div>
+
+                <div class="doc-card reveal-zoom">
+                    <p>📸 Photo</p>
+                    <button>View</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="app-actions reveal-right">
+
+            <h3>⚡ Actions</h3>
+
+            <button class="btn approve">✅ Approve</button>
+            <button class="btn reject">❌ Reject</button>
+            <button class="btn review">🔍 Request More Info</button>
+            <button class="btn note">📝 Add Note</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LEADS CONTENT MODULE -->
+<section id="leads" class="section">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2>💬 Enquiries & Leads</h2>
+        <p>Track all incoming inquiries, assign agents, and manage follow-ups efficiently.</p>
+    </div>
+
+    <!-- LEAD FILTERS -->
+    <div class="lead-controls reveal-zoom">
+
+        <input type="text" placeholder="🔍 Search leads..." class="search-box">
+
+        <select class="filter-box">
+            <option>All Leads</option>
+            <option>Hot Leads 🔥</option>
+            <option>Warm Leads 🌤️</option>
+            <option>Cold Leads ❄️</option>
+        </select>
+
+        <button class="action-btn">➕ Add Lead</button>
+
+    </div>
+
+    <!-- LEADS GRID -->
+    <div class="lead-grid">
+
+        <!-- CARD 1 -->
+        <div class="lead-card hot reveal-left">
+
+            <div class="lead-header">
+                <h3>Ravi Kumar</h3>
+                <span class="tag hot">HOT 🔥</span>
+            </div>
+
+            <p>📍 Interested in Canada PR</p>
+            <p>📧 ravi@gmail.com</p>
+            <p>📞 +91 98765 11111</p>
+            <p>📝 “Need urgent PR guidance”</p>
+
+            <div class="lead-footer">
+                <button class="btn view">View</button>
+                <button class="btn assign">Assign</button>
+                <button class="btn follow">Follow Up</button>
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="lead-card warm reveal-right">
+
+            <div class="lead-header">
+                <h3>Priya Mehta</h3>
+                <span class="tag warm">WARM 🌤️</span>
+            </div>
+
+            <p>📍 UK Student Visa</p>
+            <p>📧 priya@gmail.com</p>
+            <p>📞 +91 98765 22222</p>
+            <p>📝 “Need university guidance”</p>
+
+            <div class="lead-footer">
+                <button class="btn view">View</button>
+                <button class="btn assign">Assign</button>
+                <button class="btn follow">Follow Up</button>
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="lead-card cold reveal-up">
+
+            <div class="lead-header">
+                <h3>John Doe</h3>
+                <span class="tag cold">COLD ❄️</span>
+            </div>
+
+            <p>📍 Germany Work Visa</p>
+            <p>📧 john@gmail.com</p>
+            <p>📞 +1 555 888 999</p>
+            <p>📝 “Just exploring options”</p>
+
+            <div class="lead-footer">
+                <button class="btn view">View</button>
+                <button class="btn assign">Assign</button>
+                <button class="btn follow">Follow Up</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- control PANEL MODULE -->
+<section id="content" class="section">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2>⚙️ Content & Website Control Panel</h2>
+        <p>Manage website content, structure, and global settings from one place.</p>
+    </div>
+
+    <!-- QUICK CMS CARDS -->
+    <div class="cms-grid">
+
+        <div class="cms-card reveal-left">
+            <h3>🌍 Countries</h3>
+            <p>Add / edit / remove visa destination countries</p>
+            <button class="btn view">Manage</button>
+        </div>
+
+        <div class="cms-card reveal-right">
+            <h3>🧾 Visa Categories</h3>
+            <p>Student, Work, PR, Business visa types</p>
+            <button class="btn view">Manage</button>
+        </div>
+
+        <div class="cms-card reveal-up">
+            <h3>⭐ Testimonials</h3>
+            <p>Control client reviews displayed on website</p>
+            <button class="btn view">Manage</button>
+        </div>
+
+        <div class="cms-card reveal-zoom">
+            <h3>📰 Blogs & News</h3>
+            <p>Post immigration updates and announcements</p>
+            <button class="btn view">Manage</button>
+        </div>
+
+        <div class="cms-card reveal-left">
+            <h3>🏠 Homepage Sections</h3>
+            <p>Edit hero text, banners, and layouts</p>
+            <button class="btn view">Manage</button>
+        </div>
+
+        <div class="cms-card reveal-right">
+            <h3>🎨 UI Settings</h3>
+            <p>Colors, themes, animations control</p>
+            <button class="btn view">Manage</button>
+        </div>
+
+    </div>
+
+    <!-- DETAILED SETTINGS AREA -->
+    <div class="cms-settings">
+
+        <!-- LEFT PANEL -->
+        <div class="settings-box reveal-left">
+
+            <h3>⚙️ Global Settings</h3>
+
+            <label>Website Name</label>
+            <input type="text" value="Voyagra Immigration">
+
+            <label>Support Email</label>
+            <input type="text" value="support@voyagra.com">
+
+            <label>Phone Number</label>
+            <input type="text" value="+91 98765 43210">
+
+            <button class="btn save">💾 Save Changes</button>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="settings-box reveal-right">
+
+            <h3>🎯 System Controls</h3>
+
+            <div class="toggle-item">
+                <span>Enable User Registration</span>
+                <input type="checkbox" checked>
+            </div>
+
+            <div class="toggle-item">
+                <span>Enable Notifications</span>
+                <input type="checkbox" checked>
+            </div>
+
+            <div class="toggle-item">
+                <span>Maintenance Mode</span>
+                <input type="checkbox">
+            </div>
+
+            <div class="toggle-item">
+                <span>Auto Approve Applications</span>
+                <input type="checkbox">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</div>
+
+<script src="js/admin-dashboard.js"></script>
+</body>
+</html>

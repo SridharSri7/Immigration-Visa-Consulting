@@ -6,10 +6,10 @@ menuBtn.addEventListener("click", () => {
 });
 
 // ==================== ELIGIBILITY SECTION ===========================
-document.querySelector("form").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("🎉 Your eligibility is being analyzed. Our expert will contact you soon!");
-});
+// document.querySelector("form").addEventListener("submit", function(e){
+//     e.preventDefault();
+//     alert("🎉 Your eligibility is being analyzed. Our expert will contact you soon!");
+// });
 
 // ============== PARTICLE MOVING ANIMATION =============
 
@@ -19,28 +19,43 @@ document.querySelector("form").addEventListener("submit", function(e){
 
 // ============ 
 // SCROLL REVEAL
-const reveals = document.querySelectorAll(".reveal");
+window.addEventListener("load", () => {
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add("active");
-        }
+    const items = document.querySelectorAll(".hero-anim");
+
+    items.forEach((item,index) => {
+
+        setTimeout(() => {
+            item.classList.add("show");
+        }, index * 250);
+
     });
-}, {
-    threshold: 0.15
+
 });
 
-reveals.forEach(el => observer.observe(el));
 
+// 
+const revealItems = document.querySelectorAll(
+'.reveal-left, .reveal-right, .reveal-up, .reveal-zoom'
+);
 
-// OPTIONAL: SPEED CONTROL ON SCROLL
-let track = document.getElementById("newsTrack");
+const observer = new IntersectionObserver((entries)=>{
 
-window.addEventListener("scroll", () => {
-    let speed = 25 - window.scrollY / 100;
+    entries.forEach(entry=>{
 
-    if(speed < 10) speed = 10;
+        if(entry.isIntersecting){
 
-    track.style.animationDuration = speed + "s";
+            entry.target.classList.add('reveal-active');
+
+            observer.unobserve(entry.target);
+        }
+
+    });
+
+},{
+    threshold:0.2
+});
+
+revealItems.forEach(item=>{
+    observer.observe(item);
 });

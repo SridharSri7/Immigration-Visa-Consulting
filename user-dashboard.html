@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user-dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="sidebar-logo" onclick="window.location.href='user-dashboard.html'">
+            <img src="images/logo-stackly (1).webp" alt="Logo">
+        </div>
+
+        <a href="#" onclick="showSection('overview')">📊 Dashboard</a>
+        <a href="#" onclick="showSection('applications')">📝 My Applications</a>
+        <a href="#" onclick="showSection('documents')">📂 Document Center</a>
+        <a href="#" onclick="showSection('support')">💬 Consultation & Support</a>
+        <a href="#" onclick="showSection('profile')">🔔 Notifications & Profile</a>
+
+        <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+<!-- USER DASHBOARD MODULE -->
+<section id="overview" class="section active">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2>👋 Welcome Back, User</h2>
+        <p>Track your visa applications, documents, and consultation progress in one place.</p>
+    </div>
+
+    <!-- STATS CARDS -->
+    <div class="dash-stats">
+
+        <div class="dash-card reveal-left">
+            <h3>🧾 Total Applications</h3>
+            <h2>3</h2>
+        </div>
+
+        <div class="dash-card reveal-right">
+            <h3>⏳ In Progress</h3>
+            <h2>1</h2>
+        </div>
+
+        <div class="dash-card reveal-up">
+            <h3>✅ Approved</h3>
+            <h2>1</h2>
+        </div>
+
+        <div class="dash-card reveal-zoom">
+            <h3>📂 Pending Docs</h3>
+            <h2>2</h2>
+        </div>
+
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="dash-grid">
+
+        <!-- LEFT: APPLICATION STATUS -->
+        <div class="dash-box reveal-left">
+
+            <h3>🧾 Active Application</h3>
+
+            <div class="app-status">
+
+                <p><b>Visa Type:</b> Canada Student Visa</p>
+                <p><b>University:</b> University of Toronto</p>
+                <p><b>Status:</b> <span class="status pending">Processing</span></p>
+
+                <!-- PROGRESS BAR -->
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <small>Application Progress: 65%</small>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT: QUICK ACTIONS -->
+        <div class="dash-box reveal-right">
+
+            <h3>⚡ Quick Actions</h3>
+
+            <button class="action-btn">📂 Upload Documents</button>
+            <button class="action-btn">📞 Book Consultation</button>
+            <button class="action-btn">🧾 View Applications</button>
+            <button class="action-btn">💬 Contact Support</button>
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM SECTION -->
+    <div class="dash-grid">
+
+        <!-- NOTIFICATIONS -->
+        <div class="dash-box reveal-up">
+
+            <h3>🔔 Latest Updates</h3>
+
+            <ul class="activity-list">
+                <li>📩 Document request received from admin</li>
+                <li>🧾 Application moved to “Processing” stage</li>
+                <li>📅 Consultation scheduled for tomorrow</li>
+                <li>✅ Profile verification completed</li>
+            </ul>
+
+        </div>
+
+        <!-- TIMELINE -->
+        <div class="dash-box reveal-zoom">
+
+            <h3>📊 Application Timeline</h3>
+
+            <ul class="activity-list">
+                <li>✔ Profile Created</li>
+                <li>✔ Documents Submitted</li>
+                <li>⏳ Under Review</li>
+                <li>🔜 Embassy Submission</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MY APPLICATION MODULE -->
+<section id="applications" class="section">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2>🧾 My Applications</h2>
+        <p>Track the complete status of your visa applications in real time.</p>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="app-filter reveal-zoom">
+
+        <input type="text" placeholder="🔍 Search applications...">
+
+        <select>
+            <option>All Applications</option>
+            <option>Processing</option>
+            <option>Approved</option>
+            <option>Rejected</option>
+        </select>
+
+        <button class="action-btn">➕ New Application</button>
+
+    </div>
+
+    <!-- APPLICATION CARDS -->
+    <div class="app-grid">
+
+        <!-- CARD 1 -->
+        <div class="app-card reveal-left">
+
+            <div class="app-top">
+                <h3>Canada Student Visa</h3>
+                <span class="status pending">Processing</span>
+            </div>
+
+            <p><b>University:</b> University of Toronto</p>
+            <p><b>Applied Date:</b> 20 June 2026</p>
+
+            <!-- PROGRESS -->
+            <div class="progress-bar">
+                <div class="progress-fill p65"></div>
+            </div>
+            <small>65% Completed</small>
+
+            <div class="app-actions">
+                <button>View</button>
+                <button>Track</button>
+                <button>Documents</button>
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="app-card reveal-right">
+
+            <div class="app-top">
+                <h3>UK Work Visa</h3>
+                <span class="status approved">Approved</span>
+            </div>
+
+            <p><b>Company:</b> Tech Solutions Ltd</p>
+            <p><b>Applied Date:</b> 10 May 2026</p>
+
+            <div class="progress-bar">
+                <div class="progress-fill p100"></div>
+            </div>
+            <small>Completed</small>
+
+            <div class="app-actions">
+                <button>View</button>
+                <button>Download</button>
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="app-card reveal-up">
+
+            <div class="app-top">
+                <h3>Germany Job Seeker Visa</h3>
+                <span class="status rejected">Rejected</span>
+            </div>
+
+            <p><b>Field:</b> IT Engineering</p>
+            <p><b>Applied Date:</b> 02 April 2026</p>
+
+            <div class="progress-bar">
+                <div class="progress-fill p30"></div>
+            </div>
+            <small>Rejected at Embassy Stage</small>
+
+            <div class="app-actions">
+                <button>View</button>
+                <button>Reapply</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TIMELINE SECTION -->
+    <div class="timeline-box reveal-zoom">
+
+        <h3>📊 Application Journey</h3>
+
+        <ul class="timeline">
+
+            <li class="reveal-left">✔ Profile Created</li>
+            <li class="reveal-right">✔ Documents Submitted</li>
+            <li class="reveal-up">⏳ Under Review</li>
+            <li class="reveal-left">🏛 Embassy Processing</li>
+            <li class="reveal-right">🎯 Final Decision</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- DOCUMENT CENTER -->
+<section id="documents" class="section">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2 class="text-animate text-left">📂 Document Center</h2>
+        <p class="text-animate text-right">
+            Manage, upload, verify, and track all your immigration documents in one secure place.
+        </p>
+    </div>
+
+    <!-- DOCUMENT STATS -->
+    <div class="doc-stats">
+
+        <div class="doc-stat-card reveal-left">
+            <h3>Total Documents</h3>
+            <h2>12</h2>
+        </div>
+
+        <div class="doc-stat-card reveal-right">
+            <h3>Verified</h3>
+            <h2>8</h2>
+        </div>
+
+        <div class="doc-stat-card reveal-up">
+            <h3>Pending Review</h3>
+            <h2>3</h2>
+        </div>
+
+        <div class="doc-stat-card reveal-zoom">
+            <h3>Missing</h3>
+            <h2>1</h2>
+        </div>
+
+    </div>
+
+    <!-- UPLOAD AREA -->
+    <div class="upload-box reveal-left">
+
+        <h3>⬆ Upload New Document</h3>
+
+        <div class="upload-area">
+            <span>📄 Drag & Drop Files Here</span>
+            <p>or click to browse</p>
+            <button>Choose File</button>
+        </div>
+
+    </div>
+
+    <!-- DOCUMENT LIST -->
+    <div class="document-grid">
+
+        <!-- DOCUMENT -->
+        <div class="document-card reveal-left">
+
+            <div class="doc-top">
+                <h3>📘 Passport</h3>
+                <span class="verified">Verified</span>
+            </div>
+
+            <p>Uploaded: 15 June 2026</p>
+            <p>Expiry: 12 Aug 2032</p>
+
+            <div class="doc-actions">
+                <button>👁 View</button>
+                <button>⬇ Download</button>
+            </div>
+
+        </div>
+
+        <!-- DOCUMENT -->
+        <div class="document-card reveal-right">
+
+            <div class="doc-top">
+                <h3>🎓 Degree Certificate</h3>
+                <span class="pending">Reviewing</span>
+            </div>
+
+            <p>Uploaded: 18 June 2026</p>
+            <p>Status: Under Verification</p>
+
+            <div class="doc-actions">
+                <button>👁 View</button>
+                <button>✏ Update</button>
+            </div>
+
+        </div>
+
+        <!-- DOCUMENT -->
+        <div class="document-card reveal-up">
+
+            <div class="doc-top">
+                <h3>💰 Bank Statement</h3>
+                <span class="missing">Required</span>
+            </div>
+
+            <p>Document Not Uploaded</p>
+            <p>Required for Visa Processing</p>
+
+            <div class="doc-actions">
+                <button>⬆ Upload Now</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="checklist-box reveal-zoom">
+
+        <h3>✅ Required Document Checklist</h3>
+
+        <ul class="checklist">
+            <li>✔ Passport Copy</li>
+            <li>✔ Academic Certificates</li>
+            <li>✔ English Proficiency Test</li>
+            <li>✔ Statement of Purpose</li>
+            <li>❌ Financial Documents</li>
+            <li>✔ Passport Size Photo</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- SUPPORT MODULE -->
+<section id="support" class="section">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2 class="text-animate text-left">
+            💬 Consultation & Support
+        </h2>
+
+        <p class="text-animate text-right">
+            Get expert assistance, schedule consultations, and track all support requests from one place.
+        </p>
+    </div>
+
+    <!-- SUPPORT STATS -->
+    <div class="support-stats">
+
+        <div class="support-card reveal-left">
+            <h3>📞 Consultations</h3>
+            <h2>5</h2>
+        </div>
+
+        <div class="support-card reveal-right">
+            <h3>🎫 Open Tickets</h3>
+            <h2>2</h2>
+        </div>
+
+        <div class="support-card reveal-up">
+            <h3>✅ Resolved</h3>
+            <h2>8</h2>
+        </div>
+
+        <div class="support-card reveal-zoom">
+            <h3>⭐ Support Rating</h3>
+            <h2>4.9</h2>
+        </div>
+
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="support-grid">
+
+        <!-- BOOK CONSULTATION -->
+        <div class="support-box reveal-left">
+
+            <h3>📅 Book Consultation</h3>
+
+            <p>
+                Schedule a meeting with our immigration experts
+                to discuss your application progress,
+                eligibility assessment, and future visa options.
+            </p>
+
+            <button class="support-btn">
+                Schedule Appointment
+            </button>
+
+        </div>
+
+        <!-- CONSULTANT INFO -->
+        <div class="support-box reveal-right">
+
+            <h3>👨‍💼 Assigned Consultant</h3>
+
+            <div class="consultant">
+
+                <img src="https://i.pravatar.cc/150?img=12" alt="Consultant">
+
+                <div>
+                    <h4>John Anderson</h4>
+                    <p>Senior Immigration Advisor</p>
+                    <small>Available Mon - Sat</small>
+                </div>
+
+            </div>
+
+            <button class="support-btn">
+                Message Consultant
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- TICKET SECTION -->
+    <div class="ticket-box reveal-up">
+
+        <h3>🎫 Support Tickets</h3>
+
+        <table class="ticket-table">
+
+            <thead>
+                <tr>
+                    <th>Ticket ID</th>
+                    <th>Issue</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>#SUP1024</td>
+                    <td>Document Verification Delay</td>
+                    <td>
+                        <span class="status-open">Open</span>
+                    </td>
+                    <td>20 Jun 2026</td>
+                </tr>
+
+                <tr>
+                    <td>#SUP1021</td>
+                    <td>Visa Application Query</td>
+                    <td>
+                        <span class="status-progress">
+                            In Progress
+                        </span>
+                    </td>
+                    <td>18 Jun 2026</td>
+                </tr>
+
+                <tr>
+                    <td>#SUP1008</td>
+                    <td>Passport Upload Issue</td>
+                    <td>
+                        <span class="status-closed">
+                            Resolved
+                        </span>
+                    </td>
+                    <td>10 Jun 2026</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-box reveal-zoom">
+
+        <h3>❓ Frequently Asked Questions</h3>
+
+        <div class="faq-item reveal-left">
+            <h4>How long does visa processing take?</h4>
+            <p>
+                Processing times vary by country and visa type.
+                Most applications are processed between
+                4–12 weeks.
+            </p>
+        </div>
+
+        <div class="faq-item reveal-right">
+            <h4>Can I update documents after submission?</h4>
+            <p>
+                Yes. Updated documents can be uploaded through
+                the Document Center if requested by your consultant.
+            </p>
+        </div>
+
+        <div class="faq-item reveal-left">
+            <h4>How do I contact support?</h4>
+            <p>
+                Use the support ticket system or schedule a consultation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROFILE MODULE -->
+
+<section id="profile" class="section">
+
+    <!-- HEADER -->
+    <div class="dash-header reveal-up">
+        <h2 class="text-animate text-left">
+            👤 My Profile & Notifications
+        </h2>
+
+        <p class="text-animate text-right">
+            Manage your account information, notification preferences, and security settings.
+        </p>
+    </div>
+
+    <!-- PROFILE OVERVIEW -->
+    <div class="profile-top">
+
+<div class="profile-card reveal-left">
+
+    <div class="profile-info">
+
+        <!-- Avatar -->
+        <div class="avatar" id="avatarLetter">
+            S
+        </div>
+
+        <!-- User Details -->
+        <div class="profile-details">
+
+            <h3 id="userName">
+                Loading...
+            </h3>
+
+            <p id="userRole">
+                User
+            </p>
+
+            <span id="userEmail">
+                loading@email.com
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <div class="profile-card reveal-right">
+
+            <h3>📊 Application Summary</h3>
+
+            <div class="summary-grid">
+
+                <div>
+                    <h2>3</h2>
+                    <p>Applications</p>
+                </div>
+
+                <div>
+                    <h2>8</h2>
+                    <p>Documents</p>
+                </div>
+
+                <div>
+                    <h2>2</h2>
+                    <p>Consultations</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="profile-grid">
+
+        <!-- PERSONAL INFO -->
+        <div class="profile-box reveal-left">
+
+            <h3>📝 Personal Information</h3>
+
+            <form class="profile-form">
+
+                <input type="text" placeholder="Full Name">
+
+                <input type="email" placeholder="Email Address">
+
+                <input type="tel" placeholder="Phone Number">
+
+                <input type="text" placeholder="Nationality">
+
+                <button type="submit">
+                    Save Changes
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- SECURITY -->
+        <div class="profile-box reveal-right">
+
+            <h3>🔒 Security Settings</h3>
+
+            <div class="security-item">
+                <span>Password</span>
+                <button>Change</button>
+            </div>
+
+            <div class="security-item">
+                <span>Two-Factor Authentication</span>
+                <button>Enable</button>
+            </div>
+
+            <div class="security-item">
+                <span>Login Activity</span>
+                <button>View</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- NOTIFICATIONS -->
+    <div class="notification-box reveal-up">
+
+        <h3>🔔 Recent Notifications</h3>
+
+        <div class="notification-item reveal-left">
+            <span>📂 New document request received.</span>
+            <small>2 hours ago</small>
+        </div>
+
+        <div class="notification-item reveal-right">
+            <span>📞 Consultation scheduled successfully.</span>
+            <small>Yesterday</small>
+        </div>
+
+        <div class="notification-item reveal-left">
+            <span>✅ Passport document verified.</span>
+            <small>3 days ago</small>
+        </div>
+
+        <div class="notification-item reveal-right">
+            <span>🧾 Application status updated.</span>
+            <small>5 days ago</small>
+        </div>
+
+    </div>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <div class="activity-box reveal-zoom">
+
+        <h3>📜 Account Activity</h3>
+
+        <ul class="activity-timeline">
+
+            <li>✔ Logged into dashboard</li>
+
+            <li>📂 Uploaded Degree Certificate</li>
+
+            <li>📞 Attended Consultation Session</li>
+
+            <li>🧾 Submitted Visa Application</li>
+
+            <li>👤 Updated Profile Information</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+    </div>
+
+</div>
+
+<script src="js/user-dashboard.js"></script>
+</body>
+</html>

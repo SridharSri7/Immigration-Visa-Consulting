@@ -6,6 +6,7 @@
     <title>Stackly Immigration</title>
 
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/auth.css">
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -31,21 +32,14 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
-      <a href="#" class="btn">Free Assessment</a>
+      <a href="#" class="btn" onclick="openPopup()">Free Assessment</a>
 
       <div class="menu-btn">☰</div>
     </nav>
+<!-- hero -->
+    <section class="container home-hero">
 
-
-
-
-<section class="hero">
-
-    <!-- BACKGROUND IMAGE -->
-    <div class="hero-bg"></div>
-    <div class="overlay"></div>
-
-    <!-- ANIMATED FLIGHT PATH -->
+        <!-- ANIMATED FLIGHT PATH -->
     <svg class="flight-path" viewBox="0 0 1000 400">
         <path id="route"
             d="M50,300 C200,50 400,50 600,250 C750,400 850,150 950,100"
@@ -64,34 +58,28 @@
         </text>
     </svg>
 
-    <!-- CONTENT -->
-    <div class="hero-content">
-
-        <div class="badge">🌍 Global Immigration Experts</div>
-
-        <h1 class="reveal up">
-            Build Your Future Abroad with Confidence
-        </h1>
-
-        <p class="reveal right">
-            Professional visa consulting for students, workers,
-            families, and investors across 20+ countries.
-        </p>
-
-        <div class="buttons reveal up">
-            <a href="#" class="btn-primary">Free Eligibility Check</a>
-            <a href="#" class="btn-outline">Book Consultation</a>
-        </div>
-
-        <div class="stats reveal up">
-            <div class="stat reveal up">5000+<span>Visas Approved</span></div>
-            <div class="stat reveal up">95%<span>Success Rate</span></div>
-            <div class="stat reveal up">20+<span>Countries</span></div>
-        </div>
-
+    <div>
+      <span class="eyebrow hero-anim from-left">Immigration & Visa Experts</span>
+      <h1 class="hero-anim from-bottom">Your passport to a <span>new life</span> abroad.</h1>
+      <p class="lead hero-anim from-right">From skilled migration to student visas and investor pathways — we guide you across borders with clarity, care, and a 98% approval rate.</p>
+      <div class="hero-cta hero-anim from-bottom">
+        <a href="contact.html" class="btn btn-primary">Start Free Assessment →</a>
+        <a href="services.html" class="btn btn-ghost">Explore Services</a>
+      </div>
+      <div class="hero-stats hero-anim from-left">
+        <div><strong>12,400+</strong><span>Visas approved</span></div>
+        <div><strong>40+</strong><span>Countries</span></div>
+        <div><strong>98%</strong><span>Success rate</span></div>
+      </div>
     </div>
+    <div class="globe-card hero-anim from-right">
+      <div class="pin p1"></div><div class="pin p2"></div><div class="pin p3"></div><div class="pin p4"></div>
+    </div>
+  </section>
 
-</section>
+  
+
+
 
 <!-- ELIGIBILITY CHECK -->
 <section class="eligibility">
@@ -99,7 +87,7 @@
     <div class="elig-container">
 
         <!-- LEFT TEXT (from left) -->
-        <div class="elig-text animate-left">
+        <div class="elig-text reveal-left">
             <h2 class="elig-text reveal left">Quick Eligibility Check</h2>
             <p>
                 Find your visa eligibility in just a few seconds.
@@ -114,7 +102,7 @@
         </div>
 
         <!-- FORM (popup animation) -->
-        <div class="elig-form reveal zoom">
+        <div class="elig-form reveal-zoom">
 
             <h3>Check Your Eligibility</h3>
 
@@ -153,26 +141,28 @@
 <!-- WHY CHOOSE US -->
 <section class="why">
 
-    <h2 class="section-title reveal up">Why Choose Us</h2>
+    <h2 class="section-title reveal-up">
+        Why Choose Us
+    </h2>
 
     <div class="why-container">
 
-        <div class="why-card reveal left">
+        <div class="why-card reveal-left">
             <h3>✔ 100% Transparent Process</h3>
             <p>No hidden charges, full clarity at every step.</p>
         </div>
 
-        <div class="why-card reveal right">
+        <div class="why-card reveal-right">
             <h3>✔ Expert Consultants</h3>
             <p>Certified immigration professionals with years of experience.</p>
         </div>
 
-        <div class="why-card reveal bottom">
+        <div class="why-card reveal-left">
             <h3>✔ High Visa Success Rate</h3>
             <p>We ensure strong documentation for maximum approval chances.</p>
         </div>
 
-        <div class="why-card reveal zoom">
+        <div class="why-card reveal-zoom">
             <h3>✔ End-to-End Support</h3>
             <p>From application to visa approval, we handle everything.</p>
         </div>
@@ -184,39 +174,39 @@
 <!-- VISTA CATEGORIZE SECTION -->
 <section class="visa">
 
-    <h2 class="visa-title reveal up">Visa Categories</h2>
-    <p class="visa-subtitle reveal up">
+    <h2 class="visa-title reveal-up">Visa Categories</h2>
+    <p class="visa-subtitle reveal-up">
         Choose the right visa type based on your goal and start your journey abroad.
     </p>
 
     <div class="visa-grid">
 
-        <div class="visa-card reveal left">
+        <div class="visa-card reveal-left">
             <h3>🎓 Student Visa</h3>
             <p>Study in top universities with complete admission and visa support.</p>
         </div>
 
-        <div class="visa-card reveal right">
+        <div class="visa-card reveal-right">
             <h3>💼 Work Visa</h3>
             <p>Find international job opportunities and get work permits easily.</p>
         </div>
 
-        <div class="visa-card reveal up">
+        <div class="visa-card reveal-up">
             <h3>✈ Tourist Visa</h3>
             <p>Travel freely for holidays, business trips, or family visits.</p>
         </div>
 
-        <div class="visa-card reveal zoom">
+        <div class="visa-card reveal-zoom">
             <h3>🏠 Permanent Residency</h3>
             <p>Settle abroad permanently with expert PR application guidance.</p>
         </div>
 
-        <div class="visa-card reveal left">
+        <div class="visa-card reveal-left">
             <h3>📊 Business Visa</h3>
             <p>Expand your business globally with investor & entrepreneur visas.</p>
         </div>
 
-        <div class="visa-card reveal right">
+        <div class="visa-card reveal-right">
             <h3>❤️ Family Visa</h3>
             <p>Reunite with your family abroad through sponsorship programs.</p>
         </div>
@@ -228,15 +218,15 @@
 <!-- COUNTRIES -->
 <section class="countries">
 
-    <h2 class="countries-title reveal up">Countries We Serve 🌍</h2>
-    <p class="countries-subtitle reveal up">
+    <h2 class="countries-title reveal-up">Countries We Serve 🌍</h2>
+    <p class="countries-subtitle reveal-up">
         Explore top destinations where we help students, workers, and families successfully settle abroad.
     </p>
 
     <div class="country-grid">
 
         <!-- CANADA -->
-        <div class="country-card reveal left">
+        <div class="country-card reveal-left">
             <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80">
             <div class="overlay">
                 <h3>Canada</h3>
@@ -245,7 +235,7 @@
         </div>
 
         <!-- AUSTRALIA -->
-        <div class="country-card reveal right">
+        <div class="country-card reveal-right">
             <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80">
             <div class="overlay">
                 <h3>Australia</h3>
@@ -254,7 +244,7 @@
         </div>
 
         <!-- UK -->
-        <div class="country-card reveal up">
+        <div class="country-card reveal-up">
             <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=800&q=80">
             <div class="overlay">
                 <h3>United Kingdom</h3>
@@ -263,7 +253,7 @@
         </div>
 
         <!-- USA -->
-        <div class="country-card reveal zoom">
+        <div class="country-card reveal-zoom">
             <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
             <div class="overlay">
                 <h3>United States</h3>
@@ -272,7 +262,7 @@
         </div>
 
         <!-- GERMANY -->
-        <div class="country-card reveal left">
+        <div class="country-card reveal-left">
             <img src="https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=800&q=80">
             <div class="overlay">
                 <h3>Germany</h3>
@@ -281,7 +271,7 @@
         </div>
 
         <!-- NEW ZEALAND -->
-        <div class="country-card reveal right">
+        <div class="country-card reveal-right">
             <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=800&q=80">
             <div class="overlay">
                 <h3>New Zealand</h3>
@@ -296,15 +286,15 @@
 <!-- HOW IT WORKS -->
 <section class="how">
 
-    <h2 class="how-title reveal up">How It Works</h2>
-    <p class="how-subtitle reveal up">
+    <h2 class="how-title reveal-up">How It Works</h2>
+    <p class="how-subtitle reveal-up">
         A complete step-by-step immigration process designed to maximize your visa approval chances.
     </p>
 
     <div class="how-container">
 
         <!-- STEP 1 -->
-        <div class="how-step reveal left">
+        <div class="how-step reveal-left">
             <div class="how-img">
                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80">
             </div>
@@ -319,7 +309,7 @@
         </div>
 
         <!-- STEP 2 -->
-        <div class="how-step reveal right">
+        <div class="how-step reveal-right">
             <div class="how-text">
                 <h3>2. Eligibility Assessment</h3>
                 <p>
@@ -334,7 +324,7 @@
         </div>
 
         <!-- STEP 3 -->
-        <div class="how-step reveal left">
+        <div class="how-step reveal-left">
             <div class="how-img">
                 <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80">
             </div>
@@ -350,7 +340,7 @@
         </div>
 
         <!-- STEP 4 -->
-        <div class="how-step reveal right">
+        <div class="how-step reveal-right">
             <div class="how-text">
                 <h3>4. Application Filing & Submission</h3>
                 <p>
@@ -365,7 +355,7 @@
         </div>
 
         <!-- STEP 5 -->
-        <div class="how-step reveal left">
+        <div class="how-step reveal-left">
             <div class="how-img">
                 <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=800&q=80">
             </div>
@@ -379,20 +369,7 @@
             </div>
         </div>
 
-        <!-- STEP 6 -->
-        <div class="how-step reveal center">
-            <div class="how-img">
-                <img src="https://images.unsplash.com/photo-1521790366324-8f7a2f3d1c0a?auto=format&fit=crop&w=800&q=80">
-            </div>
-
-            <div class="how-text">
-                <h3>6. Visa Approval & Post-Landing Support 🎉</h3>
-                <p>
-                    Once approved, we guide you with travel planning, accommodation tips,
-                    and post-landing assistance so you can settle abroad smoothly without stress.
-                </p>
-            </div>
-        </div>
+        
 
     </div>
 
@@ -401,8 +378,8 @@
 <!-- NEWSLETTER -->
 <section class="news">
 
-    <h2 class="news-title reveal up">Latest Immigration Updates</h2>
-    <p class="news-subtitle reveal up">
+    <h2 class="news-title reveal-up">Latest Immigration Updates</h2>
+    <p class="news-subtitle reveal-up">
         Real-time visa news, policy changes, and global immigration alerts.
     </p>
 
@@ -410,31 +387,31 @@
 
         <div class="news-track" id="newsTrack">
 
-            <div class="news-card reveal left">
+            <div class="news-card reveal-left">
                 <h3>🇨🇦 Canada Updates Express Entry Rules</h3>
                 <p>New CRS scoring changes will impact skilled workers starting this month.</p>
                 <span>2 hrs ago</span>
             </div>
 
-            <div class="news-card reveal up">
+            <div class="news-card reveal-up">
                 <h3>🇬🇧 UK Visa Processing Faster</h3>
                 <p>Student visa approvals now processed in 15–20 days in priority category.</p>
                 <span>5 hrs ago</span>
             </div>
 
-            <div class="news-card reveal right">
+            <div class="news-card reveal-right">
                 <h3>🇦🇺 Australia PR Changes</h3>
                 <p>New occupation list released for 2026 skilled migration program.</p>
                 <span>1 day ago</span>
             </div>
 
-            <div class="news-card reveal zoom">
+            <div class="news-card reveal-zoom">
                 <h3>🇺🇸 USA H1B Lottery Update</h3>
                 <p>Electronic registration system improved for fair selection process.</p>
                 <span>1 day ago</span>
             </div>
 
-            <div class="news-card reveal left">
+            <div class="news-card reveal-left">
                 <h3>🇩🇪 Germany Work Visa Boost</h3>
                 <p>Fast-track visa introduced for IT and healthcare professionals.</p>
                 <span>2 days ago</span>
@@ -513,6 +490,175 @@
 
 </footer>
 
+
+<!-- ================= AUTH POPUP ================= -->
+
+<div id="popupOverlay" class="popup-overlay">
+
+  <div class="popup-container">
+
+    <!-- CLOSE BUTTON -->
+    <span class="popup-close" onclick="closePopup()">
+      &times;
+    </span>
+
+    <!-- LEFT SIDE -->
+    <div class="popup-left">
+
+      <h1>Welcome 👋</h1>
+
+      <p>
+        Access your dashboard, analytics,
+        projects and management system.
+      </p>
+
+      <div class="popup-feature-list">
+
+        <div class="popup-feature-card">
+          📊 Real-time Analytics
+        </div>
+
+        <div class="popup-feature-card">
+          ⚡ Fast Dashboard
+        </div>
+
+        <div class="popup-feature-card">
+          🔒 Secure Authentication
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="popup-right">
+
+      <!-- LOGIN -->
+      <div id="loginForm" class="popup-login-box">
+
+        <h2>Login</h2>
+
+        <span>
+          Access your account
+        </span>
+
+        <input
+          id="loginEmail"
+          type="email"
+          placeholder="Enter Email"
+        >
+
+        <div class="password-wrap">
+            <input id="loginPassword" type="password" placeholder="Enter Password">
+            <span class="eye-btn" onclick="togglePassword('loginPassword',this)">👁</span>
+        </div>
+        <small id="passwordHint" class="hint-text"> </small>
+        <!--  -->
+
+        <div class="login-options">
+
+          <label class="remember-label">
+            <input type="checkbox" id="rememberMe">
+            Remember me
+          </label>
+
+          <p class="popup-forgot">
+            <a href="error.htm" onclick="forgotPassword()">Forgot Password?</a>
+          </p>
+
+        </div>
+        <!--  -->
+
+        <select id="loginRole">
+
+          <option value="user">
+            User
+          </option>
+
+          <option value="admin">
+            Admin
+          </option>
+
+        </select>
+
+        <button onclick="login()">
+          Login
+        </button>
+
+        <p class="popup-switch">
+
+          Don't have an account?
+
+          <span onclick="showSignup()">
+            Signup
+          </span>
+
+        </p>
+
+      </div>
+
+      <!-- SIGNUP -->
+       <!-- ================= SIGNUP FORM ================= -->
+<div id="signupForm" class="popup-signup-box hidden">
+
+  <h2 class="signup-h2">Create Account</h2>
+  <span>Create your new account</span>
+
+  <!-- ROLE SELECTION (AVATAR STYLE) -->
+  <div class="role-selector">
+
+    <div id="userRoleCard" class="role-card active" onclick="selectRole('user')">
+      <div class="avatar">👤</div>
+      <p>User</p>
+    </div>
+
+    <div id="adminRoleCard" class="role-card" onclick="selectRole('admin')">
+      <div class="avatar">🛡️</div>
+      <p>Admin</p>
+    </div>
+
+  </div>
+
+  <!-- INPUTS -->
+  <input id="signupName" type="text" placeholder="Enter Name">
+  <input id="signupEmail" type="email" placeholder="Enter Email">
+  <div class="password-wrap">
+    <input id="signupPassword" type="password" placeholder="Enter Password">
+    <span class="eye-btn" onclick="togglePassword('signupPassword',this)">👁</span>
+  </div>
+  <div class="password-wrap">
+    <input id="signupConfirmPassword" type="password" placeholder="Confirm Password">
+    <span class="eye-btn" onclick="togglePassword('signupConfirmPassword',this)">👁</span>
+  </div>
+
+  <!-- HIDDEN ROLE -->
+  <select id="signupRole" style="display:none;">
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+  </select>
+
+  <!-- ERROR MESSAGE -->
+  <p id="signupError" class="error-text"></p>
+
+  <!-- BUTTON -->
+  <button onclick="signup()">Create Account</button>
+
+  <!-- SWITCH -->
+  <p class="popup-switch signup-login">
+    Already have an account?
+    <span onclick="showLogin()">Login</span>
+  </p>
+
+</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+    <script src="js/auth.js"></script>
     <script src="js/home.js"></script>
   </body>
 </html>

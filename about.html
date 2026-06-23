@@ -6,6 +6,7 @@
     <title>Stackly Immigration</title>
 
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/auth.css">
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -25,7 +26,7 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
-      <a href="#" class="btn">Free Assessment</a>
+      <a href="#" class="btn" onclick="openPopup()">Free Assessment</a>
 
       <div class="menu-btn">☰</div>
     </nav>
@@ -64,6 +65,8 @@
     </div>
 
 </section>
+
+
 
 <!-- STORY -->
 <section class="our-story">
@@ -151,6 +154,8 @@
 
 </section>
 
+
+
 <!-- OUR TEAM -->
 <section class="team">
 
@@ -229,6 +234,44 @@
 
 </section>
 
+<!-- ABOUT MISSION -->
+<section class="about-mission">
+
+    <div class="mission-left reveal-left">
+        <span class="kicker">Our Mission</span>
+        <h2>We simplify global immigration for everyone.</h2>
+        <p>
+            Our mission is to remove confusion from the visa process and replace it with clarity, trust,
+            and expert guidance. We believe moving abroad should be exciting — not stressful.
+        </p>
+    </div>
+
+    <div class="mission-right">
+
+        <div class="value-card reveal-up">
+            <h3>🛡️ Trust & Transparency</h3>
+            <p>No hidden steps, no false promises — only honest guidance.</p>
+        </div>
+
+        <div class="value-card reveal-up">
+            <h3>⚡ Fast Processing</h3>
+            <p>We optimize every application for speed and accuracy.</p>
+        </div>
+
+        <div class="value-card reveal-up">
+            <h3>🌍 Global Expertise</h3>
+            <p>We cover student, work, PR, and business visas worldwide.</p>
+        </div>
+
+        <div class="value-card reveal-up">
+            <h3>🤝 Human Support</h3>
+            <p>Real experts guide you at every step — not bots.</p>
+        </div>
+
+    </div>
+
+</section>
+
 <!-- testimonial -->
 <section class="testimonials">
 
@@ -274,9 +317,9 @@
                     <span>PR Visa - Australia</span>
                 </div>
             </div>
-            <p>
-                “The team is very supportive and transparent. I finally got my PR
-                visa for Australia after multiple rejections elsewhere.”
+            <p class="testi-text typing" data-text="The team is very supportive and transparent. I finally got my PR
+                visa for Australia after multiple rejections elsewhere.">
+                
             </p>
         </div>
 
@@ -391,6 +434,174 @@
 
 </footer>
 
+
+<!-- ================= AUTH POPUP ================= -->
+
+<div id="popupOverlay" class="popup-overlay">
+
+  <div class="popup-container">
+
+    <!-- CLOSE BUTTON -->
+    <span class="popup-close" onclick="closePopup()">
+      &times;
+    </span>
+
+    <!-- LEFT SIDE -->
+    <div class="popup-left">
+
+      <h1>Welcome 👋</h1>
+
+      <p>
+        Access your dashboard, analytics,
+        projects and management system.
+      </p>
+
+      <div class="popup-feature-list">
+
+        <div class="popup-feature-card">
+          📊 Real-time Analytics
+        </div>
+
+        <div class="popup-feature-card">
+          ⚡ Fast Dashboard
+        </div>
+
+        <div class="popup-feature-card">
+          🔒 Secure Authentication
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="popup-right">
+
+      <!-- LOGIN -->
+      <div id="loginForm" class="popup-login-box">
+
+        <h2>Login</h2>
+
+        <span>
+          Access your account
+        </span>
+
+        <input
+          id="loginEmail"
+          type="email"
+          placeholder="Enter Email"
+        >
+
+        <div class="password-wrap">
+            <input id="loginPassword" type="password" placeholder="Enter Password">
+            <span class="eye-btn" onclick="togglePassword('loginPassword',this)">👁</span>
+        </div>
+        <small id="passwordHint" class="hint-text"> </small>
+        <!--  -->
+
+        <div class="login-options">
+
+          <label class="remember-label">
+            <input type="checkbox" id="rememberMe">
+            Remember me
+          </label>
+
+          <p class="popup-forgot">
+            <a href="error.htm" onclick="forgotPassword()">Forgot Password?</a>
+          </p>
+
+        </div>
+        <!--  -->
+
+        <select id="loginRole">
+
+          <option value="user">
+            User
+          </option>
+
+          <option value="admin">
+            Admin
+          </option>
+
+        </select>
+
+        <button onclick="login()">
+          Login
+        </button>
+
+        <p class="popup-switch">
+
+          Don't have an account?
+
+          <span onclick="showSignup()">
+            Signup
+          </span>
+
+        </p>
+
+      </div>
+
+      <!-- SIGNUP -->
+       <!-- ================= SIGNUP FORM ================= -->
+<div id="signupForm" class="popup-signup-box hidden">
+
+  <h2 class="signup-h2">Create Account</h2>
+  <span>Create your new account</span>
+
+  <!-- ROLE SELECTION (AVATAR STYLE) -->
+  <div class="role-selector">
+
+    <div id="userRoleCard" class="role-card active" onclick="selectRole('user')">
+      <div class="avatar">👤</div>
+      <p>User</p>
+    </div>
+
+    <div id="adminRoleCard" class="role-card" onclick="selectRole('admin')">
+      <div class="avatar">🛡️</div>
+      <p>Admin</p>
+    </div>
+
+  </div>
+
+  <!-- INPUTS -->
+  <input id="signupName" type="text" placeholder="Enter Name">
+  <input id="signupEmail" type="email" placeholder="Enter Email">
+  <div class="password-wrap">
+    <input id="signupPassword" type="password" placeholder="Enter Password">
+    <span class="eye-btn" onclick="togglePassword('signupPassword',this)">👁</span>
+  </div>
+  <div class="password-wrap">
+    <input id="signupConfirmPassword" type="password" placeholder="Confirm Password">
+    <span class="eye-btn" onclick="togglePassword('signupConfirmPassword',this)">👁</span>
+  </div>
+
+  <!-- HIDDEN ROLE -->
+  <select id="signupRole" style="display:none;">
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+  </select>
+
+  <!-- ERROR MESSAGE -->
+  <p id="signupError" class="error-text"></p>
+
+  <!-- BUTTON -->
+  <button onclick="signup()">Create Account</button>
+
+  <!-- SWITCH -->
+  <p class="popup-switch signup-login">
+    Already have an account?
+    <span onclick="showLogin()">Login</span>
+  </p>
+
+</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+    <script src="js/auth.js"></script>
     <script src="js/about.js"></script>
   </body>
 </html>
