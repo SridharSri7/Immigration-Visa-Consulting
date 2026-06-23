@@ -71,6 +71,24 @@ font-weight:600;
 display:none;
 }
 
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:50px;
+    width:auto;
+    display:block;
+    object-fit:contain;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.logo img:hover{
+    transform:scale(1.05);
+}
+
 @media(max-width:900px){
 
 
@@ -2412,4 +2430,9 @@ cursor:pointer;
     .how-img{
         width: 100%;
     }
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
 }

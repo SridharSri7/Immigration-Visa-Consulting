@@ -71,6 +71,24 @@ font-weight:600;
 display:none;
 }
 
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:50px;
+    width:auto;
+    display:block;
+    object-fit:contain;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.logo img:hover{
+    transform:scale(1.05);
+}
+
 @media(max-width:900px){
 
 
@@ -892,14 +910,18 @@ cursor:pointer;
 /* ================================== PROCESS ======================================= */
 .process-mini{
     padding:120px 5%;
-    background:#f8fafc;
+     background:
+  radial-gradient(circle at top left, rgba(56,189,248,0.25), transparent 40%),
+  radial-gradient(circle at bottom right, rgba(37,99,235,0.25), transparent 40%),
+  linear-gradient(135deg, #0b1220, #0f172a);
+  
     text-align:center;
 }
 
 /* TITLE */
 .process-title{
     font-size:2.6rem;
-    color:#0f172a;
+    color:#f5f5f5;
     margin-bottom:10px;
 }
 
@@ -1108,3 +1130,7 @@ cursor:pointer;
     }
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}

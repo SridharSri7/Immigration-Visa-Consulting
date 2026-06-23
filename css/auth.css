@@ -13,6 +13,7 @@
   --border: rgba(255,255,255,0.08);
 }
 
+
 /* OVERLAY */
 
 .popup-overlay{
@@ -113,15 +114,31 @@
 }
 
 /* ---------- */
+/* .popup-left{
+    padding:60px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #78b4dc 0%,
+    #507b8b 50%,
+    #32445a 100%
+    );
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+} */
+
 .popup-left{
     padding:60px;
 
     background:
     linear-gradient(
     135deg,
-    #43361e 0%,
-    #5b4835 50%,
-    #35240c 100%
+    #8c78dc 0%,
+    #505d8b 50%,
+    #2b224d 100%
     );
 
     display:flex;
@@ -145,7 +162,7 @@
 /* RIGHT */
 
 .popup-right{
-    background:#625041;
+    background:#082258;
 
     padding:50px;
 
@@ -420,8 +437,8 @@
 .popup-right{
   background: linear-gradient(
     145deg,
-    #1e1b18,
-    #2a221c
+    #263684,
+    #030d32
   );
 }
 
@@ -518,3 +535,4 @@
     gap: 10px;
   }
 }
+

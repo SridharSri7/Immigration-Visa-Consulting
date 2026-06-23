@@ -78,6 +78,24 @@ font-weight:600;
 display:none;
 }
 
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:50px;
+    width:auto;
+    display:block;
+    object-fit:contain;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.logo img:hover{
+    transform:scale(1.05);
+}
+
 @media(max-width:900px){
 
 
@@ -210,8 +228,8 @@ cursor:pointer;
     inset:0;
     background:linear-gradient(
         135deg,
-        rgba(15,23,42,0.85),
-        rgba(37,99,235,0.55)
+        rgba(13, 23, 44, 0.85),
+        rgba(49, 57, 74, 0.55)
     );
 }
 
@@ -333,7 +351,7 @@ cursor:pointer;
 /* =========== CORE SERVICES ========== */
 .core-services{
     padding:120px 5%;
-    background:#f8fafc;
+     background:linear-gradient(135deg,#6983ac,#dfe2e5);
 }
 
 .core-services h2{
@@ -1102,4 +1120,9 @@ cursor:pointer;
     .newsletter{
         flex-direction:column;
     }
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
 }

@@ -14,14 +14,14 @@
     <div class="sidebar">
 
         <div class="sidebar-logo" onclick="window.location.href='user-dashboard.html'">
-            <img src="images/logo-stackly (1).webp" alt="Logo">
+            <img src="images/logo-stackly (1).webp" alt="Logo" >
         </div>
 
-        <a href="#" onclick="showSection('overview')">📊 Dashboard</a>
-        <a href="#" onclick="showSection('applications')">📝 My Applications</a>
-        <a href="#" onclick="showSection('documents')">📂 Document Center</a>
-        <a href="#" onclick="showSection('support')">💬 Consultation & Support</a>
-        <a href="#" onclick="showSection('profile')">🔔 Notifications & Profile</a>
+        <a onclick="showSection('overview')">📊 Dashboard</a>
+        <a onclick="showSection('applications')">📝 My Applications</a>
+        <a onclick="showSection('documents')">📂 Document Center</a>
+        <a onclick="showSection('support')">💬 Consultation & Support</a>
+        <a onclick="showSection('profile')">🔔 Notifications & Profile</a>
 
         <button class="logout-btn" onclick="logout()">🚪 Logout</button>
 
@@ -94,10 +94,10 @@
 
             <h3>⚡ Quick Actions</h3>
 
-            <button class="action-btn">📂 Upload Documents</button>
-            <button class="action-btn">📞 Book Consultation</button>
-            <button class="action-btn">🧾 View Applications</button>
-            <button class="action-btn">💬 Contact Support</button>
+            <button  class="action-btn" onclick="window.location.href='dashboardError.html'">📂 Upload Documents</button>
+            <button class="action-btn" onclick="window.location.href='dashboardError.html'">📞 Book Consultation</button>
+            <button class="action-btn" onclick="window.location.href='dashboardError.html'">🧾 View Applications</button>
+            <button class="action-btn" onclick="window.location.href='dashboardError.html'">💬 Contact Support</button>
 
         </div>
 
@@ -159,7 +159,7 @@
             <option>Rejected</option>
         </select>
 
-        <button class="action-btn">➕ New Application</button>
+        <button class="action-btn" onclick="window.location.href='dashboardError.html'">➕ New Application</button>
 
     </div>
 
@@ -184,9 +184,9 @@
             <small>65% Completed</small>
 
             <div class="app-actions">
-                <button>View</button>
-                <button>Track</button>
-                <button>Documents</button>
+                <button onclick="window.location.href='dashboardError.html'">View</button>
+                <button onclick="window.location.href='dashboardError.html'">Track</button>
+                <button onclick="window.location.href='dashboardError.html'">Documents</button>
             </div>
 
         </div>
@@ -208,8 +208,8 @@
             <small>Completed</small>
 
             <div class="app-actions">
-                <button>View</button>
-                <button>Download</button>
+                <button onclick="window.location.href='dashboardError.html'">View</button>
+                <button onclick="window.location.href='dashboardError.html'">Download</button>
             </div>
 
         </div>
@@ -231,8 +231,8 @@
             <small>Rejected at Embassy Stage</small>
 
             <div class="app-actions">
-                <button>View</button>
-                <button>Reapply</button>
+                <button onclick="window.location.href='dashboardError.html'">View</button>
+                <button onclick="window.location.href='dashboardError.html'">Reapply</button>
             </div>
 
         </div>
@@ -302,7 +302,7 @@
         <div class="upload-area">
             <span>📄 Drag & Drop Files Here</span>
             <p>or click to browse</p>
-            <button>Choose File</button>
+            <button onclick="window.location.href='dashboardError.html'">Choose File</button>
         </div>
 
     </div>
@@ -322,8 +322,8 @@
             <p>Expiry: 12 Aug 2032</p>
 
             <div class="doc-actions">
-                <button>👁 View</button>
-                <button>⬇ Download</button>
+                <button onclick="window.location.href='dashboardError.html'">👁 View</button>
+                <button onclick="window.location.href='dashboardError.html'">⬇ Download</button>
             </div>
 
         </div>
@@ -340,8 +340,8 @@
             <p>Status: Under Verification</p>
 
             <div class="doc-actions">
-                <button>👁 View</button>
-                <button>✏ Update</button>
+                <button onclick="window.location.href='dashboardError.html'">👁 View</button>
+                <button onclick="window.location.href='dashboardError.html'">✏ Update</button>
             </div>
 
         </div>
@@ -358,7 +358,7 @@
             <p>Required for Visa Processing</p>
 
             <div class="doc-actions">
-                <button>⬆ Upload Now</button>
+                <button onclick="window.location.href='dashboardError.html'">⬆ Upload Now</button>
             </div>
 
         </div>
@@ -436,7 +436,7 @@
                 eligibility assessment, and future visa options.
             </p>
 
-            <button class="support-btn">
+            <button class="support-btn" onclick="window.location.href='dashboardError.html'">
                 Schedule Appointment
             </button>
 
@@ -459,7 +459,7 @@
 
             </div>
 
-            <button class="support-btn">
+            <button class="support-btn" onclick="window.location.href='dashboardError.html'">
                 Message Consultant
             </button>
 
@@ -648,7 +648,7 @@
 
                 <input type="text" placeholder="Nationality">
 
-                <button type="submit">
+                <button type="submit" onclick="window.location.href='dashboardError.html'">
                     Save Changes
                 </button>
 
@@ -663,17 +663,17 @@
 
             <div class="security-item">
                 <span>Password</span>
-                <button>Change</button>
+                <button onclick="window.location.href='dashboardError.html'">Change</button>
             </div>
 
             <div class="security-item">
                 <span>Two-Factor Authentication</span>
-                <button>Enable</button>
+                <button onclick="window.location.href='dashboardError.html'">Enable</button>
             </div>
 
             <div class="security-item">
                 <span>Login Activity</span>
-                <button>View</button>
+                <button onclick="window.location.href='dashboardError.html'">View</button>
             </div>
 
         </div>
