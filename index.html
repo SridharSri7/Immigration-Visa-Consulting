@@ -133,7 +133,7 @@
 
                 <input type="email" placeholder="Email Address" required>
 
-                <button type="submit">Check My Eligibility</button>
+                <button type="submit" onclick="window.location.href='error.html'">Check My Eligibility</button>
             </form>
 
         </div>
@@ -544,7 +544,7 @@
 
             <div class="newsletter">
                 <input type="email" placeholder="Enter email">
-                <button>Subscribe</button>
+                <button onclick="window.location.href='error.html'">Subscribe</button>
             </div>
         </div>
 
@@ -617,7 +617,7 @@
 
         <div class="password-wrap">
             <input id="loginPassword" type="password" placeholder="Enter Password">
-            <span class="eye-btn" onclick="togglePassword('loginPassword',this)">👁</span>
+            <span class="eye-btn" onclick="togglePassword('loginPassword',this)"> <i class="fa-solid fa-eye"></i> </span>
         </div>
         <small id="passwordHint" class="hint-text"> </small>
         <!--  -->
@@ -691,11 +691,11 @@
   <input id="signupEmail" type="email" placeholder="Enter Email">
   <div class="password-wrap">
     <input id="signupPassword" type="password" placeholder="Enter Password">
-    <span class="eye-btn" onclick="togglePassword('signupPassword',this)">👁</span>
+    <span class="eye-btn" onclick="togglePassword('signupPassword',this)"><i class="fa-solid fa-eye"></i></span>
   </div>
   <div class="password-wrap">
     <input id="signupConfirmPassword" type="password" placeholder="Confirm Password">
-    <span class="eye-btn" onclick="togglePassword('signupConfirmPassword',this)">👁</span>
+    <span class="eye-btn" onclick="togglePassword('signupConfirmPassword',this)"><i class="fa-solid fa-eye"></i></span>
   </div>
 
   <!-- HIDDEN ROLE -->

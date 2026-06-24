@@ -481,8 +481,9 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #b8c0cc;
+  color:black;
 }
+
 
 /* REMEMBER + FORGOT ROW */
 .login-options{
@@ -562,7 +563,7 @@ select option{
 
     /* NEW COLORS */
     background: rgba(196, 197, 202, 0.9);   /* dark bluish background */
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     color: #000000;
 
     outline: none;
@@ -572,7 +573,7 @@ select option{
 /* placeholder color */
 .popup-login-box input::placeholder,
 .popup-signup-box input::placeholder {
-    color: rgba(55, 45, 45, 0.5);
+    color: black;
 }
 
 /* focus effect */
@@ -581,4 +582,30 @@ select option{
     border-color: #38bdf8;
     box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
     background: rgb(110, 111, 115);
+}
+
+.eye-btn{
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    /* color:#a60e0e; Black */
+    font-size:18px;
+}
+
+.eye-btn:hover{
+    color:#2563eb;
+}
+.password-wrap{
+    position: relative;
+    width: 100%;
+}
+
+.eye-btn{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }

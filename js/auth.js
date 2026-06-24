@@ -37,17 +37,20 @@ function showLogin(){
 }
 
 // PASSWORD EYE
-function togglePassword(id,icon){
+function togglePassword(id, icon){
 
     const input = document.getElementById(id);
+    const eye = icon.querySelector("i");
 
     if(input.type === "password"){
         input.type = "text";
-        icon.innerHTML = "👁";
+        eye.classList.remove("fa-eye");
+        eye.classList.add("fa-eye-slash");
     }
     else{
         input.type = "password";
-        icon.innerHTML = "👁";
+        eye.classList.remove("fa-eye-slash");
+        eye.classList.add("fa-eye");
     }
 }
 

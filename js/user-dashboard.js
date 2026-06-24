@@ -37,12 +37,29 @@ function showSection(id){
 
 
 // =============== animation ================
-function toggleSidebar(){
-  document.getElementById("sidebar").classList.toggle("active");
+function toggleSidebar() {
+
+  const sidebar = document.getElementById("sidebar");
+
+  sidebar.classList.toggle("active");
+
+  // Disable body scroll when sidebar is open
+  if (sidebar.classList.contains("active")) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
 }
 
-document.querySelectorAll(".sidebar a").forEach(link=>{
-  link.addEventListener("click", ()=>{
+// Close sidebar when menu item clicked
+document.querySelectorAll(".sidebar a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
     document.getElementById("sidebar").classList.remove("active");
+    document.body.classList.remove("no-scroll");
+
   });
+
 });
+

@@ -742,6 +742,11 @@ table{
     color: #000;
 }
 
+/* Prevent page scrolling */
+body.no-scroll{
+    overflow: hidden;
+}
+
 /* RESPONSIVE */
 @media(max-width: 900px){
     .cms-settings{

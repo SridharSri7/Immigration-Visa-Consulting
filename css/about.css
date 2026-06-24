@@ -1054,8 +1054,8 @@ cursor:pointer;
     transform:translateX(5px);
 }
 
-i{
-    color: red;
+footer i{
+    color: rgb(83, 103, 216);
 }
 
 /* SOCIAL */

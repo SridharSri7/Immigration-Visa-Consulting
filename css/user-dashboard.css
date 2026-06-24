@@ -949,6 +949,11 @@ li{
     opacity:.7;
 }
 
+/* Prevent page scrolling */
+body.no-scroll{
+    overflow: hidden;
+}
+
 
 /* ======================= */
 /* =======================
