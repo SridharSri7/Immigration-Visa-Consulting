@@ -611,3 +611,77 @@ select option{
     transform: translateY(-50%);
     cursor: pointer;
 }
+
+/* ============================ */
+.popup-container{
+    width: min(500px, 95%);
+    max-width: 500px;
+
+    background: #171b22;
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 30px 80px rgba(0,0,0,.6);
+}
+
+.popup-right{
+    background: linear-gradient(
+        145deg,
+        #7889de,
+        #060f33
+    );
+
+    padding: 40px 30px;
+
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-left{
+    display: none !important;
+}
+
+.popup-login-box,
+.popup-signup-box{
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+}
+
+@media (max-width: 480px){
+
+    .popup-container{
+        width: 95%;
+        border-radius: 20px;
+    }
+
+    .popup-right{
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .popup-login-box h2,
+    .popup-signup-box h2{
+        font-size: 1.8rem;
+    }
+}
+
+
+.popup-container{
+    width:min(500px,95%);
+    max-width:500px;
+
+    display:block;
+}
+
+.popup-container{
+    display:grid;
+    grid-template-columns:1fr;
+}
