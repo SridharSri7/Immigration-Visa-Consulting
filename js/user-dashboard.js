@@ -37,24 +37,12 @@ function showSection(id){
 
 
 // =============== animation ================
-// document.addEventListener("DOMContentLoaded", () => {
+function toggleSidebar(){
+  document.getElementById("sidebar").classList.toggle("active");
+}
 
-//     const user =
-//         JSON.parse(localStorage.getItem("loggedInUser"));
-
-//     if(user){
-
-//         document.getElementById("profileName").textContent =
-//             user.name;
-
-//         document.getElementById("profileRole").textContent =
-//             user.role;
-
-//         document.getElementById("memberSince").textContent =
-//             "Member Since: " + user.memberSince;
-
-//         document.getElementById("profileAvatar").src =
-//             user.avatar;
-//     }
-
-// });
+document.querySelectorAll(".sidebar a").forEach(link=>{
+  link.addEventListener("click", ()=>{
+    document.getElementById("sidebar").classList.remove("active");
+  });
+});

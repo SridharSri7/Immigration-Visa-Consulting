@@ -44,8 +44,8 @@ window.onload = function(){
 }
 
 function logout(){
-    alert("Logging out...");
-    // window.location.href = "login.html";
+    localStorage.clear();
+    window.location.href = "index.html";
 }
 
 // ===================
@@ -67,3 +67,14 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+// ================= toggler ============
+function toggleSidebar(){
+  document.getElementById("sidebar").classList.toggle("active");
+}
+
+document.querySelectorAll(".sidebar a").forEach(link=>{
+  link.addEventListener("click", ()=>{
+    document.getElementById("sidebar").classList.remove("active");
+  });
+});

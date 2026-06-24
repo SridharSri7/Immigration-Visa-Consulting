@@ -72,3 +72,5 @@ menuBtn.addEventListener("click", () => {
     // lock/unlock scroll
     document.body.classList.toggle("no-scroll");
 });
+
+// ======================

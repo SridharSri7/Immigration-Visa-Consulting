@@ -437,8 +437,8 @@
 .popup-right{
   background: linear-gradient(
     145deg,
-    #263684,
-    #030d32
+    #606fba,
+    #111b41
   );
 }
 
@@ -517,14 +517,14 @@
 }
 
 .popup-forgot a{
-  color: #c9a46a;
+  color: #8ab1e0;
   text-decoration: none;
   font-size: 14px;
   transition: .3s;
 }
 
 .popup-forgot a:hover{
-  color: #e0c28a;
+  color: #061323;
 }
 
 /* MOBILE */
@@ -547,4 +547,38 @@ select{
 select option{
     background: #1e293b;
     color: #fff;
+}
+
+/* ================= LOGIN INPUT STYLING ================= */
+
+.popup-login-box input,
+.popup-signup-box input,
+.popup-login-box select,
+.popup-signup-box select {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+
+    /* NEW COLORS */
+    background: rgba(196, 197, 202, 0.9);   /* dark bluish background */
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #000000;
+
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* placeholder color */
+.popup-login-box input::placeholder,
+.popup-signup-box input::placeholder {
+    color: rgba(55, 45, 45, 0.5);
+}
+
+/* focus effect */
+.popup-login-box input:focus,
+.popup-signup-box input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+    background: rgb(110, 111, 115);
 }

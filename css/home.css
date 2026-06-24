@@ -1193,6 +1193,109 @@ cursor:pointer;
     transform:translate(0,0) scale(1);
 }
 
+/* ============================ TESTIMONIAL ============================== */
+.testimonials{
+  padding:120px 5%;
+  text-align:center;
+  background:
+    radial-gradient(circle at top, rgba(56,189,248,0.15), transparent 40%),
+    radial-gradient(circle at bottom, rgba(37,99,235,0.15), transparent 40%),
+    linear-gradient(135deg,#0b1220,#0f172a);
+  color:white;
+}
+
+/* TITLES */
+.section-title{
+  font-size:2.8rem;
+  margin-bottom:10px;
+}
+
+.section-subtitle{
+  color:rgba(255,255,255,0.7);
+  margin-bottom:60px;
+}
+
+/* GRID */
+.testimonial-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* CARD */
+.testimonial-card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  backdrop-filter:blur(15px);
+  padding:25px;
+  border-radius:20px;
+  text-align:left;
+  position:relative;
+  transition:0.4s ease;
+  box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+
+.testimonial-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 30px 80px rgba(56,189,248,0.2);
+}
+
+/* QUOTE ICON */
+.quote{
+  font-size:3rem;
+  color:#38bdf8;
+  position:absolute;
+  top:10px;
+  right:20px;
+  opacity:0.3;
+}
+
+/* TEXT */
+.testimonial-card p{
+  font-size:0.95rem;
+  line-height:1.6;
+  margin-bottom:20px;
+  color:rgba(255,255,255,0.85);
+}
+
+/* CLIENT INFO */
+.client{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.client img{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid #38bdf8;
+}
+
+.client h4{
+  margin:0;
+  color:#38bdf8;
+}
+
+.client span{
+  font-size:0.85rem;
+  color:rgba(255,255,255,0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .section-title{
+    font-size:2rem;
+  }
+
+  .testimonial-container{
+    grid-template-columns:1fr;
+  }
+}
+
 /* ============================ NEWSLETTER ============================== */
 .news{
     padding:120px 5%;
@@ -1349,6 +1452,10 @@ cursor:pointer;
 .socials a:hover{
     background:#38bdf8;
     transform:translateY(-3px);
+}
+
+i{
+    color: red;
 }
 
 /* NEWSLETTER */

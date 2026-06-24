@@ -11,8 +11,16 @@
 
 <div class="admin-layout">
 
+    <div class="mobile-topbar">
+  <button class="menu-toggle" onclick="toggleSidebar()">
+    ☰
+  </button>
+
+  
+</div>
+
     <!-- SIDEBAR -->
-    <div class="sidebar admin">
+    <div class="sidebar admin" id="sidebar">
 
         <h2>Admin Panel</h2>
 
@@ -111,10 +119,10 @@
 
             <h3>⚡ Quick Actions</h3>
 
-            <button class="action-btn">+ Add User</button>
-            <button class="action-btn">🧾 New Application</button>
-            <button class="action-btn">💬 View Leads</button>
-            <button class="action-btn">⚙️ Manage Content</button>
+            <button class="action-btn" onclick="window.location.href='dashboardError.html'">+ Add User</button>
+            <button class="action-btn" onclick="window.location.href='dashboardError.html'">🧾 New Application</button>
+            <button class="action-btn" onclick="window.location.href='dashboardError.html'">💬 View Leads</button>
+            <button class="action-btn" onclick="window.location.href='dashboardError.html'">⚙️ Manage Content</button>
 
         </div>
 
@@ -143,7 +151,7 @@
             <option>Blocked</option>
         </select>
 
-        <button class="action-btn">➕ Add User</button>
+        <button class="action-btn" onclick="window.location.href='dashboardError.html'">➕ Add User</button>
 
     </div>
 

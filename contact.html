@@ -191,9 +191,22 @@
 
       <form>
 
-        <input type="text" placeholder="Full Name" required>
+        <!-- NAME (ONLY LETTERS) -->
+        <input type="text"
+          placeholder="Full Name"
+          id="fullName"
+          required
+          oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g,'')"
+        >
         <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number" required>
+        <!-- PHONE (ONLY NUMBERS) -->
+        <input type="tel"
+          placeholder="Phone Number"
+          id="phoneNumber"
+          required
+          maxlength="10"
+          oninput="this.value = this.value.replace(/[^0-9]/g,'')"
+        >
 
         <select required>
           <option value="">Select Country</option>
@@ -218,11 +231,27 @@
 
       </form>
 
+
     </div>
+
+    <!-- MAP SECTION -->
+      <div class="map-box">
+
+        <img src="images/map3.jpg" alt="Stackly Location Map">
+
+        <!-- PIN -->
+        <div class="map-pin">
+          📍
+          <span class="pin-pulse"></span>
+        </div>
+
+      </div>
 
   </div>
 
 </section>
+
+
 
 <!-- CUSOMER PROMISE -->
 <section class="support">
@@ -302,11 +331,11 @@
         <div class="footer-box reveal up">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="error.html">Home</a></li>
-                <li><a href="error.html">About Us</a></li>
-                <li><a href="error.html">Services</a></li>
-                <li><a href="error.html">Countries</a></li>
-                <li><a href="error.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="countries.html">Countries</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 

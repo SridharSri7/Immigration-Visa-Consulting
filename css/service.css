@@ -1069,6 +1069,10 @@ cursor:pointer;
     transform:translateY(-3px);
 }
 
+i{
+    color: red;
+}
+
 /* NEWSLETTER */
 .newsletter{
     margin-top:15px;
