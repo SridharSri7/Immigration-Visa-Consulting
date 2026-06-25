@@ -1,4 +1,4 @@
-
+"use strict";
 // =================== LOGIN & SIGNUP =====================
 // OPEN POPUP
 function openPopup(){
