@@ -629,11 +629,14 @@ select option{
 }
 
 .popup-right{
-    background: linear-gradient(
-        145deg,
-        #7889de,
-        #060f33
-    );
+    background:
+radial-gradient(circle at top left,
+rgba(37,99,235,.2),
+transparent 35%),
+radial-gradient(circle at bottom right,
+rgba(56,189,248,.15),
+transparent 35%),
+#020617;
 
     padding: 40px 30px;
 
