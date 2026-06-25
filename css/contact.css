@@ -59,6 +59,24 @@ transition:.4s;
 color:var(--accent);
 }
 
+/* Active Page Underline */
+.nav-links a{
+    position: relative;
+}
+
+.nav-links a.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 100%;
+    height: 2px;
+
+    background: #2563eb; /* change color if needed */
+    border-radius: 10px;
+}
+
 .btn{
 background:var(--secondary);
 cursor: pointer;
