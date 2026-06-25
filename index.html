@@ -6,45 +6,56 @@
     <title>Stackly Immigration</title>
 
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/auth.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
   <body>
-
-    
-
     <nav>
-      <div class="logo">
-          <a href="index.html">
-              <img src="images/logo-stackly (1).webp" alt="Stackly Logo">
-          </a>
+      <div class="logo-lg">
+        <a href="index.html">
+          <img src="images/logo-stackly (1).webp" alt="Stackly Logo" />
+        </a>
       </div>
 
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="service.html" >Services</a></li>
-        <li><a href="countries.html" >Countries</a></li>
-        <li><a href="contact.html" >Contact</a></li>
+        <div class="mobile-menu-logo">
+          <img src="images/logo-stackly (1).webp" alt="Stackly Logo" />
+        </div>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="countries.html">Countries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <div class="mobile-contact">
+          <h4>Contact Info</h4>
+          <p>📞 +91 98765 43210</p>
+          <p>✉ info@stackly.com</p>
+          <p>📍 Chennai, India</p>
+        </div>
       </ul>
 
-      <a  class="btn" onclick="openPopup()">Login</a>
+      <a class="btn" onclick="openPopup()"> Login </a>
+
+      <a class="mobile-login-btn" onclick="openPopup()"> Login </a>
 
       <div class="menu-btn">☰</div>
     </nav>
-<!-- hero -->
-    <section class="container home-hero">
 
-        <!-- ANIMATED FLIGHT PATH -->
-    <!-- <svg class="flight-path" viewBox="0 0 1000 400">
+    <!-- hero -->
+    <section class="container home-hero">
+      <!-- ANIMATED FLIGHT PATH -->
+      <!-- <svg class="flight-path" viewBox="0 0 1000 400">
         <path id="route"
             d="M50,300 C200,50 400,50 600,250 C750,400 850,150 950,100"
             fill="none" />
@@ -62,648 +73,658 @@
         </text>
     </svg> -->
 
-    <div>
-      <span class="eyebrow hero-anim from-left">Immigration & Visa Experts</span>
-      <h1 class="hero-anim from-bottom">Your passport to a <span>new life</span> abroad.</h1>
-      <p class="lead hero-anim from-right">From skilled migration to student visas and investor pathways — we guide you across borders with clarity, care, and a 98% approval rate.</p>
-      <div class="hero-cta hero-anim from-bottom">
-        <a href="error.html" class="btn btn-primary" >Start Free Assessment →</a>
-        <a href="error.html" class="btn btn-ghost" >Explore Services</a>
+      <div>
+        <span class="eyebrow hero-anim from-left"
+          >Immigration & Visa Experts</span
+        >
+        <h1 class="hero-anim from-bottom">
+          Your passport to a <span>new life</span> abroad.
+        </h1>
+        <p class="lead hero-anim from-right">
+          From skilled migration to student visas and investor pathways — we
+          guide you across borders with clarity, care, and a 98% approval rate.
+        </p>
+        <div class="hero-cta hero-anim from-bottom">
+          <a href="error.html" class="btn btn-primary"
+            >Start Free Assessment →</a
+          >
+          <a href="error.html" class="btn btn-ghost">Explore Services</a>
+        </div>
+        <div class="hero-stats hero-anim from-left">
+          <div><strong>12,400+</strong><span>Visas approved</span></div>
+          <div><strong>40+</strong><span>Countries</span></div>
+          <div><strong>98%</strong><span>Success rate</span></div>
+        </div>
       </div>
-      <div class="hero-stats hero-anim from-left">
-        <div><strong>12,400+</strong><span>Visas approved</span></div>
-        <div><strong>40+</strong><span>Countries</span></div>
-        <div><strong>98%</strong><span>Success rate</span></div>
+      <div class="globe-card hero-anim from-right">
+        <div class="pin p1"></div>
+        <div class="pin p2"></div>
+        <div class="pin p3"></div>
+        <div class="pin p4"></div>
       </div>
-    </div>
-    <div class="globe-card hero-anim from-right">
-      <div class="pin p1"></div><div class="pin p2"></div><div class="pin p3"></div><div class="pin p4"></div>
-    </div>
-  </section>
+    </section>
 
-  
-
-
-
-<!-- ELIGIBILITY CHECK -->
-<section class="eligibility">
-
-    <div class="elig-container">
-
+    <!-- ELIGIBILITY CHECK -->
+    <section class="eligibility">
+      <div class="elig-container">
         <!-- LEFT TEXT (from left) -->
         <div class="elig-text reveal-left">
-            <h2 class="elig-text reveal left">Quick Eligibility Check</h2>
-            <!-- <p class="sub">
+          <h2 class="elig-text reveal left">Quick Eligibility Check</h2>
+          <!-- <p class="sub">
                 Find your visa eligibility in just a few seconds.
                 Fast, accurate and expert-backed results.
             </p> -->
 
-            <ul>
-                <li>✔ Free Assessment</li>
-                <li>✔ Instant Results</li>
-                <li>✔ Expert Guidance</li>
-            </ul>
+          <ul>
+            <li>✔ Free Assessment</li>
+            <li>✔ Instant Results</li>
+            <li>✔ Expert Guidance</li>
+          </ul>
         </div>
 
         <!-- FORM (popup animation) -->
         <div class="elig-form reveal-zoom">
+          <h3>Check Your Eligibility</h3>
 
-            <h3>Check Your Eligibility</h3>
+          <form>
+            <!-- NAME (ONLY LETTERS) -->
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="fullName"
+              required
+              oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+            />
+            <input type="number" placeholder="Age" required />
 
-            <form>
-                <!-- NAME (ONLY LETTERS) -->
-                <input type="text"
-                  placeholder="Full Name"
-                  id="fullName"
-                  required
-                  oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g,'')"
-                >
-                <input type="number" placeholder="Age" required>
+            <select required>
+              <option value="">Select Country</option>
+              <option>Canada</option>
+              <option>Australia</option>
+              <option>UK</option>
+              <option>USA</option>
+              <option>Germany</option>
+            </select>
 
-                <select required>
-                    <option value="">Select Country</option>
-                    <option>Canada</option>
-                    <option>Australia</option>
-                    <option>UK</option>
-                    <option>USA</option>
-                    <option>Germany</option>
-                </select>
+            <select required>
+              <option value="">Visa Type</option>
+              <option>Student Visa</option>
+              <option>Work Visa</option>
+              <option>Tourist Visa</option>
+              <option>PR Visa</option>
+            </select>
 
-                <select required>
-                    <option value="">Visa Type</option>
-                    <option>Student Visa</option>
-                    <option>Work Visa</option>
-                    <option>Tourist Visa</option>
-                    <option>PR Visa</option>
-                </select>
+            <input type="email" placeholder="Email Address" required />
 
-                <input type="email" placeholder="Email Address" required>
-
-                <button type="submit" onclick="window.location.href='error.html'">Check My Eligibility</button>
-            </form>
-
+            <button type="submit" onclick="window.location.href = 'error.html'">
+              Check My Eligibility
+            </button>
+          </form>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- WHY CHOOSE US -->
+    <section class="why">
+      <h2 class="section-title reveal-up">Why Choose Us</h2>
 
-</section>
-
-<!-- WHY CHOOSE US -->
-<section class="why">
-
-    <h2 class="section-title reveal-up">
-        Why Choose Us
-    </h2>
-
-    <div class="why-container">
-
+      <div class="why-container">
         <div class="why-card reveal-left">
-            <h3>✔ 100% Transparent Process</h3>
-            <p>No hidden charges, full clarity at every step.</p>
+          <h3>✔ 100% Transparent Process</h3>
+          <p>No hidden charges, full clarity at every step.</p>
         </div>
 
         <div class="why-card reveal-right">
-            <h3>✔ Expert Consultants</h3>
-            <p>Certified immigration professionals with years of experience.</p>
+          <h3>✔ Expert Consultants</h3>
+          <p>Certified immigration professionals with years of experience.</p>
         </div>
 
         <div class="why-card reveal-left">
-            <h3>✔ High Visa Success Rate</h3>
-            <p>We ensure strong documentation for maximum approval chances.</p>
+          <h3>✔ High Visa Success Rate</h3>
+          <p>We ensure strong documentation for maximum approval chances.</p>
         </div>
 
         <div class="why-card reveal-zoom">
-            <h3>✔ End-to-End Support</h3>
-            <p>From application to visa approval, we handle everything.</p>
+          <h3>✔ End-to-End Support</h3>
+          <p>From application to visa approval, we handle everything.</p>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- VISTA CATEGORIZE SECTION -->
+    <section class="visa">
+      <h2 class="visa-title reveal-up">Visa Categories</h2>
+      <p class="visa-subtitle sub reveal-up">
+        Choose the right visa type based on your goal and start your journey
+        abroad.
+      </p>
 
-</section>
-
-<!-- VISTA CATEGORIZE SECTION -->
-<section class="visa">
-
-    <h2 class="visa-title reveal-up">Visa Categories</h2>
-    <p class="visa-subtitle sub reveal-up">
-        Choose the right visa type based on your goal and start your journey abroad.
-    </p>
-
-    <div class="visa-grid">
-
+      <div class="visa-grid">
         <div class="visa-card reveal-left">
-            <h3>🎓 Student Visa</h3>
-            <p>Study in top universities with complete admission and visa support.</p>
+          <h3>🎓 Student Visa</h3>
+          <p>
+            Study in top universities with complete admission and visa support.
+          </p>
         </div>
 
         <div class="visa-card reveal-right">
-            <h3>💼 Work Visa</h3>
-            <p>Find international job opportunities and get work permits easily.</p>
+          <h3>💼 Work Visa</h3>
+          <p>
+            Find international job opportunities and get work permits easily.
+          </p>
         </div>
 
         <div class="visa-card reveal-up">
-            <h3>✈ Tourist Visa</h3>
-            <p>Travel freely for holidays, business trips, or family visits.</p>
+          <h3>✈ Tourist Visa</h3>
+          <p>Travel freely for holidays, business trips, or family visits.</p>
         </div>
 
         <div class="visa-card reveal-zoom">
-            <h3>🏠 Permanent Residency</h3>
-            <p>Settle abroad permanently with expert PR application guidance.</p>
+          <h3>🏠 Permanent Residency</h3>
+          <p>Settle abroad permanently with expert PR application guidance.</p>
         </div>
 
         <div class="visa-card reveal-left">
-            <h3>📊 Business Visa</h3>
-            <p>Expand your business globally with investor & entrepreneur visas.</p>
+          <h3>📊 Business Visa</h3>
+          <p>
+            Expand your business globally with investor & entrepreneur visas.
+          </p>
         </div>
 
         <div class="visa-card reveal-right">
-            <h3>❤️ Family Visa</h3>
-            <p>Reunite with your family abroad through sponsorship programs.</p>
+          <h3>❤️ Family Visa</h3>
+          <p>Reunite with your family abroad through sponsorship programs.</p>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- COUNTRIES -->
+    <section class="countries">
+      <h2 class="countries-title reveal-up">Countries We Serve 🌍</h2>
+      <p class="countries-subtitle sub reveal-up">
+        Explore top destinations where we help students, workers, and families
+        successfully settle abroad.
+      </p>
 
-</section>
-
-<!-- COUNTRIES -->
-<section class="countries">
-
-    <h2 class="countries-title reveal-up">Countries We Serve 🌍</h2>
-    <p class="countries-subtitle sub reveal-up">
-        Explore top destinations where we help students, workers, and families successfully settle abroad.
-    </p>
-
-    <div class="country-grid">
-
+      <div class="country-grid">
         <!-- CANADA -->
         <div class="country-card reveal-left">
-            <img src="images/place-1.webp">
-            <div class="overlay">
-                <h3>Canada</h3>
-                <p>Student Visa • PR • Work Permit</p>
-            </div>
+          <img src="images/place-1.webp" />
+          <div class="overlay">
+            <h3>Canada</h3>
+            <p>Student Visa • PR • Work Permit</p>
+          </div>
         </div>
 
         <!-- AUSTRALIA -->
         <div class="country-card reveal-right">
-            <img src="images/place-2.webp">
-            <div class="overlay">
-                <h3>Australia</h3>
-                <p>Skilled Migration • Student Visa</p>
-            </div>
+          <img src="images/place-2.webp" />
+          <div class="overlay">
+            <h3>Australia</h3>
+            <p>Skilled Migration • Student Visa</p>
+          </div>
         </div>
 
         <!-- UK -->
         <div class="country-card reveal-up">
-            <img src="images/place-3.webp">
-            <div class="overlay">
-                <h3>United Kingdom</h3>
-                <p>Study • Work • Family Visa</p>
-            </div>
+          <img src="images/place-3.webp" />
+          <div class="overlay">
+            <h3>United Kingdom</h3>
+            <p>Study • Work • Family Visa</p>
+          </div>
         </div>
 
         <!-- USA -->
         <div class="country-card reveal-zoom">
-            <img src="images/place4.webp">
-            <div class="overlay">
-                <h3>United States</h3>
-                <p>F1 Visa • H1B • Green Card</p>
-            </div>
+          <img src="images/place4.webp" />
+          <div class="overlay">
+            <h3>United States</h3>
+            <p>F1 Visa • H1B • Green Card</p>
+          </div>
         </div>
 
         <!-- GERMANY -->
         <div class="country-card reveal-left">
-            <img src="images/place5.webp">
-            <div class="overlay">
-                <h3>Germany</h3>
-                <p>Job Seeker Visa • Study Visa</p>
-            </div>
+          <img src="images/place5.webp" />
+          <div class="overlay">
+            <h3>Germany</h3>
+            <p>Job Seeker Visa • Study Visa</p>
+          </div>
         </div>
 
         <!-- NEW ZEALAND -->
         <div class="country-card reveal-right">
-            <img src="images/place7.jpg">
-            <div class="overlay">
-                <h3>New Zealand</h3>
-                <p>Work Visa • Skilled Migration</p>
-            </div>
+          <img src="images/place7.jpg" />
+          <div class="overlay">
+            <h3>New Zealand</h3>
+            <p>Work Visa • Skilled Migration</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- HOW IT WORKS -->
+    <section class="how">
+      <h2 class="how-title reveal-up">How It Works</h2>
+      <p class="how-subtitle sub reveal-up">
+        A complete step-by-step immigration process designed to maximize your
+        visa approval chances.
+      </p>
 
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="how">
-
-    <h2 class="how-title reveal-up">How It Works</h2>
-    <p class="how-subtitle sub reveal-up">
-        A complete step-by-step immigration process designed to maximize your visa approval chances.
-    </p>
-
-    <div class="how-container">
-
+      <div class="how-container">
         <!-- STEP 1 -->
         <div class="how-step reveal-left">
-            <div class="how-img">
-                <img src="images/hill2.webp">
-            </div>
+          <div class="how-img">
+            <img src="images/hill2.webp" />
+          </div>
 
-            <div class="how-text">
-                <h3>1. Free Consultation & Profile Review</h3>
-                <p>
-                    We start by understanding your goals, education, work experience, and migration intent.
-                    Our experts analyze your profile and suggest the best visa pathways suited for your future.
-                </p>
-            </div>
+          <div class="how-text">
+            <h3>1. Free Consultation & Profile Review</h3>
+            <p>
+              We start by understanding your goals, education, work experience,
+              and migration intent. Our experts analyze your profile and suggest
+              the best visa pathways suited for your future.
+            </p>
+          </div>
         </div>
 
         <!-- STEP 2 -->
         <div class="how-step reveal-right">
-            <div class="how-text">
-                <h3>2. Eligibility Assessment</h3>
-                <p>
-                    We perform a detailed eligibility check based on country immigration rules.
-                    You receive a clear report showing your chances, requirements, and improvement areas.
-                </p>
-            </div>
+          <div class="how-text">
+            <h3>2. Eligibility Assessment</h3>
+            <p>
+              We perform a detailed eligibility check based on country
+              immigration rules. You receive a clear report showing your
+              chances, requirements, and improvement areas.
+            </p>
+          </div>
 
-            <div class="how-img">
-                <img src="images/place-2.webp">
-            </div>
+          <div class="how-img">
+            <img src="images/place-2.webp" />
+          </div>
         </div>
 
         <!-- STEP 3 -->
         <div class="how-step reveal-left">
-            <div class="how-img">
-                <img src="images/hill4.webp">
-            </div>
+          <div class="how-img">
+            <img src="images/hill4.webp" />
+          </div>
 
-            <div class="how-text">
-                <h3>3. Documentation Preparation</h3>
-                <p>
-                    We guide you in collecting and preparing all required documents such as passports,
-                    academic certificates, financial proofs, and sponsorship letters.
-                    Every document is verified to avoid rejection risks.
-                </p>
-            </div>
+          <div class="how-text">
+            <h3>3. Documentation Preparation</h3>
+            <p>
+              We guide you in collecting and preparing all required documents
+              such as passports, academic certificates, financial proofs, and
+              sponsorship letters. Every document is verified to avoid rejection
+              risks.
+            </p>
+          </div>
         </div>
 
         <!-- STEP 4 -->
         <div class="how-step reveal-right">
-            <div class="how-text">
-                <h3>4. Application Filing & Submission</h3>
-                <p>
-                    Our experts fill out your visa application with precision and accuracy.
-                    We ensure all details meet embassy standards before submission to avoid delays or refusals.
-                </p>
-            </div>
+          <div class="how-text">
+            <h3>4. Application Filing & Submission</h3>
+            <p>
+              Our experts fill out your visa application with precision and
+              accuracy. We ensure all details meet embassy standards before
+              submission to avoid delays or refusals.
+            </p>
+          </div>
 
-            <div class="how-img">
-                <img src="images/img7 (1).webp">
-            </div>
+          <div class="how-img">
+            <img src="images/img7 (1).webp" />
+          </div>
         </div>
 
         <!-- STEP 5 -->
         <div class="how-step reveal-left">
-            <div class="how-img">
-                <img src="images/place7.jpg">
+          <div class="how-img">
+            <img src="images/place7.jpg" />
+          </div>
+
+          <div class="how-text">
+            <h3>5. Interview Preparation (If Required)</h3>
+            <p>
+              We prepare you for embassy interviews with mock sessions, sample
+              questions, and confidence-building techniques to ensure you
+              perform well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonials">
+      <h2 class="section-title reveal up">💬 What Our Clients Say</h2>
+      <p class="section-subtitle sub reveal up">
+        Real stories from students, professionals, and families who achieved
+        their dreams abroad.
+      </p>
+
+      <div class="testimonial-container">
+        <!-- CARD 1 -->
+        <div class="testimonial-card reveal left">
+          <div class="quote">❝</div>
+          <p>
+            Stackly helped me get my Canada student visa in just 5 weeks. The
+            process was smooth and fully guided.
+          </p>
+
+          <div class="client">
+            <img src="images/team1.webp" alt="" />
+            <div>
+              <h4>Arjun Kumar</h4>
+              <span>Canada Student Visa</span>
             </div>
+          </div>
+        </div>
 
-            <div class="how-text">
-                <h3>5. Interview Preparation (If Required)</h3>
-                <p>
-                    We prepare you for embassy interviews with mock sessions, sample questions,
-                    and confidence-building techniques to ensure you perform well.
-                </p>
+        <!-- CARD 2 -->
+        <div class="testimonial-card reveal up">
+          <div class="quote">❝</div>
+          <p>
+            I got rejected once for Australia visa, but Stackly rebuilt my
+            profile and got approval second time.
+          </p>
+
+          <div class="client">
+            <img src="images/team2.webp" alt="" />
+            <div>
+              <h4>Priya Sharma</h4>
+              <span>Australia Skilled Visa</span>
             </div>
+          </div>
         </div>
 
-        
+        <!-- CARD 3 -->
+        <div class="testimonial-card reveal right">
+          <div class="quote">❝</div>
+          <p>
+            Best consultancy ever! They handled my UK documents and interview
+            prep perfectly.
+          </p>
 
-    </div>
-
-</section>
-
-<!-- TESTIMONIAL -->
-<section class="testimonials">
-
-  <h2 class="section-title reveal up">💬 What Our Clients Say</h2>
-  <p class="section-subtitle sub reveal up">
-    Real stories from students, professionals, and families who achieved their dreams abroad.
-  </p>
-
-  <div class="testimonial-container">
-
-    <!-- CARD 1 -->
-    <div class="testimonial-card reveal left">
-      <div class="quote">❝</div>
-      <p>
-        Stackly helped me get my Canada student visa in just 5 weeks.
-        The process was smooth and fully guided.
-      </p>
-
-      <div class="client">
-        <img src="images/team1.webp" alt="">
-        <div>
-          <h4>Arjun Kumar</h4>
-          <span>Canada Student Visa</span>
+          <div class="client">
+            <img src="images/team3.webp" alt="" />
+            <div>
+              <h4>John Miller</h4>
+              <span>UK Work Visa</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- CARD 2 -->
-    <div class="testimonial-card reveal up">
-      <div class="quote">❝</div>
-      <p>
-        I got rejected once for Australia visa, but Stackly rebuilt my profile and got approval second time.
-      </p>
-
-      <div class="client">
-        <img src="images/team2.webp" alt="">
-        <div>
-          <h4>Priya Sharma</h4>
-          <span>Australia Skilled Visa</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="testimonial-card reveal right">
-      <div class="quote">❝</div>
-      <p>
-        Best consultancy ever! They handled my UK documents and interview prep perfectly.
-      </p>
-
-      <div class="client">
-        <img src="images/team3.webp" alt="">
-        <div>
-          <h4>John Miller</h4>
-          <span>UK Work Visa</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- NEWSLETTER -->
-<section class="news">
-
-    <h2 class="news-title reveal-up">Latest Immigration Updates</h2>
-    <p class="news-subtitle sub reveal-up">
+    <!-- NEWSLETTER -->
+    <section class="news">
+      <h2 class="news-title reveal-up">Latest Immigration Updates</h2>
+      <p class="news-subtitle sub reveal-up">
         Real-time visa news, policy changes, and global immigration alerts.
-    </p>
+      </p>
 
-    <div class="news-wrapper">
-
+      <div class="news-wrapper">
         <div class="news-track" id="newsTrack">
+          <div class="news-card reveal-left">
+            <h3>🇨🇦 Canada Updates Express Entry Rules</h3>
+            <p>
+              New CRS scoring changes will impact skilled workers starting this
+              month.
+            </p>
+            <span>2 hrs ago</span>
+          </div>
 
-            <div class="news-card reveal-left">
-                <h3>🇨🇦 Canada Updates Express Entry Rules</h3>
-                <p>New CRS scoring changes will impact skilled workers starting this month.</p>
-                <span>2 hrs ago</span>
-            </div>
+          <div class="news-card reveal-up">
+            <h3>🇬🇧 UK Visa Processing Faster</h3>
+            <p>
+              Student visa approvals now processed in 15–20 days in priority
+              category.
+            </p>
+            <span>5 hrs ago</span>
+          </div>
 
-            <div class="news-card reveal-up">
-                <h3>🇬🇧 UK Visa Processing Faster</h3>
-                <p>Student visa approvals now processed in 15–20 days in priority category.</p>
-                <span>5 hrs ago</span>
-            </div>
+          <div class="news-card reveal-right">
+            <h3>🇦🇺 Australia PR Changes</h3>
+            <p>
+              New occupation list released for 2026 skilled migration program.
+            </p>
+            <span>1 day ago</span>
+          </div>
 
-            <div class="news-card reveal-right">
-                <h3>🇦🇺 Australia PR Changes</h3>
-                <p>New occupation list released for 2026 skilled migration program.</p>
-                <span>1 day ago</span>
-            </div>
+          <div class="news-card reveal-zoom">
+            <h3>🇺🇸 USA H1B Lottery Update</h3>
+            <p>
+              Electronic registration system improved for fair selection
+              process.
+            </p>
+            <span>1 day ago</span>
+          </div>
 
-            <div class="news-card reveal-zoom">
-                <h3>🇺🇸 USA H1B Lottery Update</h3>
-                <p>Electronic registration system improved for fair selection process.</p>
-                <span>1 day ago</span>
-            </div>
-
-            <div class="news-card reveal-left">
-                <h3>🇩🇪 Germany Work Visa Boost</h3>
-                <p>Fast-track visa introduced for IT and healthcare professionals.</p>
-                <span>2 days ago</span>
-            </div>
-
+          <div class="news-card reveal-left">
+            <h3>🇩🇪 Germany Work Visa Boost</h3>
+            <p>
+              Fast-track visa introduced for IT and healthcare professionals.
+            </p>
+            <span>2 days ago</span>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<footer class="footer">
-
-    <div class="footer-container">
-
+    <footer class="footer">
+      <div class="footer-container">
         <!-- BRAND INFO -->
         <div class="footer-box reveal left">
-            <h2 onclick="window.location.href='index.html'">Stackly Immigration</h2>
-            <p>
-                Your trusted global immigration partner helping students,
-                professionals, and families achieve their dreams abroad.
-            </p>
+          <h2 onclick="window.location.href = 'index.html'">
+            Stackly Immigration
+          </h2>
+          <p>
+            Your trusted global immigration partner helping students,
+            professionals, and families achieve their dreams abroad.
+          </p>
 
-            <div class="socials">
-                <a onclick="window.location.href='error.html'"> <i class="fa-brands fa-instagram"></i> </a>
-                <a onclick="window.location.href='error.html'"> <i class="fa-brands fa-linkedin-in"></i> </a>
-                <a onclick="window.location.href='error.html'"> <i class="fa-brands fa-x-twitter"></i> </a>
-                <a onclick="window.location.href='error.html'"> <i class="fa-brands fa-youtube"></i> </a>
-            </div>
+          <div class="socials">
+            <a onclick="window.location.href = 'error.html'">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a onclick="window.location.href = 'error.html'">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a onclick="window.location.href = 'error.html'">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a onclick="window.location.href = 'error.html'">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
         </div>
 
         <!-- QUICK LINKS -->
         <div class="footer-box reveal up">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="countries.html">Countries</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="countries.html">Countries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
         <!-- SERVICES -->
         <div class="footer-box reveal right">
-            <h3>Our Services</h3>
-            <ul>
-                <li> <a href="error.html">Student Visa</a></li>
-                <li><a href="error.html">Work Visa</a></li>
-                <li><a href="error.html">PR Assistance</a></li>
-                <li><a href="error.html">Business Visa</a></li>
-                <li><a href="error.html">Tourist Visa</a></li>
-            </ul>
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="error.html">Student Visa</a></li>
+            <li><a href="error.html">Work Visa</a></li>
+            <li><a href="error.html">PR Assistance</a></li>
+            <li><a href="error.html">Business Visa</a></li>
+            <li><a href="error.html">Tourist Visa</a></li>
+          </ul>
         </div>
 
         <!-- CONTACT + NEWSLETTER -->
         <div class="footer-box reveal zoom">
-            <h3>Contact Us</h3>
+          <h3>Contact Us</h3>
 
-            <p>📍 Mumbai, India</p>
-            <p>📞 +91 98765 43210</p>
-            <p>✉ info@Stackly.com</p>
+          <p>📍 Mumbai, India</p>
+          <p>📞 +91 98765 43210</p>
+          <p>✉ info@Stackly.com</p>
 
-            <div class="newsletter">
-                <input type="email" placeholder="Enter email">
-                <button onclick="window.location.href='error.html'">Subscribe</button>
-            </div>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter email" />
+            <button onclick="window.location.href = 'error.html'">
+              Subscribe
+            </button>
+          </div>
         </div>
-
-    </div>
-
-    <!-- BOTTOM BAR -->
-    <div class="footer-bottom reveal up">
-        <p>© 2026 Stackly Immigration. All Rights Reserved.</p>
-    </div>
-
-</footer>
-
-
-<!-- ================= AUTH POPUP ================= -->
-
-<div id="popupOverlay" class="popup-overlay">
-
-  <div class="popup-container">
-
-    <!-- CLOSE BUTTON -->
-    <span class="popup-close" onclick="closePopup()">
-      &times;
-    </span>
-
-    
-
-    <!-- RIGHT SIDE -->
-    <div class="popup-right">
-
-      <!-- LOGIN -->
-      <div id="loginForm" class="popup-login-box">
-
-        <h2>Login</h2>
-
-        <span>
-          Access your account
-        </span>
-
-        <input
-          id="loginEmail"
-          type="email"
-          placeholder="Enter Email"
-        >
-
-        <div class="password-wrap">
-            <input id="loginPassword" type="password" placeholder="Enter Password">
-            <span class="eye-btn" onclick="togglePassword('loginPassword',this)"> <i class="fa-solid fa-eye"></i> </span>
-        </div>
-        <small id="passwordHint" class="hint-text"> </small>
-        <!--  -->
-
-        <div class="login-options">
-
-          <label class="remember-label">
-            <input type="checkbox" id="rememberMe">
-            Remember me
-          </label>
-
-          <p class="popup-forgot">
-            <a href="error.htm" onclick="forgotPassword()">Forgot Password?</a>
-          </p>
-
-        </div>
-        <!--  -->
-
-        <select id="loginRole">
-
-          <option value="user">
-            User
-          </option>
-
-          <option value="admin">
-            Admin
-          </option>
-
-        </select>
-
-        <button onclick="login()">
-          Login
-        </button>
-
-        <p class="popup-switch">
-
-          Don't have an account?
-
-          <span onclick="showSignup()">
-            Signup
-          </span>
-
-        </p>
-
       </div>
 
-      <!-- SIGNUP -->
-       <!-- ================= SIGNUP FORM ================= -->
-<div id="signupForm" class="popup-signup-box hidden">
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom reveal up">
+        <p>© 2026 Stackly Immigration. All Rights Reserved.</p>
+      </div>
+    </footer>
 
-  <h2 class="signup-h2">Create Account</h2>
-  <span>Create your new account</span>
+    <!-- ================= AUTH POPUP ================= -->
 
-  <!-- ROLE SELECTION (AVATAR STYLE) -->
-  <div class="role-selector">
+    <div id="popupOverlay" class="popup-overlay">
+      <div class="popup-container">
+        <!-- CLOSE BUTTON -->
+        <span class="popup-close" onclick="closePopup()"> &times; </span>
 
-    <div id="userRoleCard" class="role-card active" onclick="selectRole('user')">
-      <div class="avatar">👤</div>
-      <p>User</p>
+        <!-- RIGHT SIDE -->
+        <div class="popup-right">
+          <!-- LOGIN -->
+          <div id="loginForm" class="popup-login-box">
+            <h2>Login</h2>
+
+            <span> Access your account </span>
+
+            <input id="loginEmail" type="email" placeholder="Enter Email" />
+
+            <div class="password-wrap">
+              <input
+                id="loginPassword"
+                type="password"
+                placeholder="Enter Password"
+              />
+              <span
+                class="eye-btn"
+                onclick="togglePassword('loginPassword', this)"
+              >
+                <i class="fa-solid fa-eye"></i>
+              </span>
+            </div>
+            <small id="passwordHint" class="hint-text"> </small>
+            <!--  -->
+
+            <div class="login-options">
+              <label class="remember-label">
+                <input type="checkbox" id="rememberMe" />
+                Remember me
+              </label>
+
+              <p class="popup-forgot">
+                <a href="error.htm" onclick="forgotPassword()"
+                  >Forgot Password?</a
+                >
+              </p>
+            </div>
+            <!--  -->
+
+            <select id="loginRole">
+              <option value="user">User</option>
+
+              <option value="admin">Admin</option>
+            </select>
+
+            <button onclick="login()">Login</button>
+
+            <p class="popup-switch">
+              Don't have an account?
+
+              <span onclick="showSignup()"> Signup </span>
+            </p>
+          </div>
+
+          <!-- SIGNUP -->
+          <!-- ================= SIGNUP FORM ================= -->
+          <div id="signupForm" class="popup-signup-box hidden">
+            <h2 class="signup-h2">Create Account</h2>
+            <span>Create your new account</span>
+
+            <!-- ROLE SELECTION (AVATAR STYLE) -->
+            <div class="role-selector">
+              <div
+                id="userRoleCard"
+                class="role-card active"
+                onclick="selectRole('user')"
+              >
+                <div class="avatar">👤</div>
+                <p>User</p>
+              </div>
+
+              <div
+                id="adminRoleCard"
+                class="role-card"
+                onclick="selectRole('admin')"
+              >
+                <div class="avatar">🛡️</div>
+                <p>Admin</p>
+              </div>
+            </div>
+
+            <!-- INPUTS -->
+            <input id="signupName" type="text" placeholder="Enter Name" />
+            <input id="signupEmail" type="email" placeholder="Enter Email" />
+            <div class="password-wrap">
+              <input
+                id="signupPassword"
+                type="password"
+                placeholder="Enter Password"
+              />
+              <span
+                class="eye-btn"
+                onclick="togglePassword('signupPassword', this)"
+                ><i class="fa-solid fa-eye"></i
+              ></span>
+            </div>
+            <div class="password-wrap">
+              <input
+                id="signupConfirmPassword"
+                type="password"
+                placeholder="Confirm Password"
+              />
+              <span
+                class="eye-btn"
+                onclick="togglePassword('signupConfirmPassword', this)"
+                ><i class="fa-solid fa-eye"></i
+              ></span>
+            </div>
+
+            <!-- HIDDEN ROLE -->
+            <select id="signupRole" style="display: none">
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+
+            <!-- ERROR MESSAGE -->
+            <p id="signupError" class="error-text"></p>
+
+            <!-- BUTTON -->
+            <button onclick="signup()">Create Account</button>
+
+            <!-- SWITCH -->
+            <p class="popup-switch signup-login">
+              Already have an account?
+              <span onclick="showLogin()">Login</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div id="adminRoleCard" class="role-card" onclick="selectRole('admin')">
-      <div class="avatar">🛡️</div>
-      <p>Admin</p>
-    </div>
-
-  </div>
-
-  <!-- INPUTS -->
-  <input id="signupName" type="text" placeholder="Enter Name">
-  <input id="signupEmail" type="email" placeholder="Enter Email">
-  <div class="password-wrap">
-    <input id="signupPassword" type="password" placeholder="Enter Password">
-    <span class="eye-btn" onclick="togglePassword('signupPassword',this)"><i class="fa-solid fa-eye"></i></span>
-  </div>
-  <div class="password-wrap">
-    <input id="signupConfirmPassword" type="password" placeholder="Confirm Password">
-    <span class="eye-btn" onclick="togglePassword('signupConfirmPassword',this)"><i class="fa-solid fa-eye"></i></span>
-  </div>
-
-  <!-- HIDDEN ROLE -->
-  <select id="signupRole" style="display:none;">
-    <option value="user">User</option>
-    <option value="admin">Admin</option>
-  </select>
-
-  <!-- ERROR MESSAGE -->
-  <p id="signupError" class="error-text"></p>
-
-  <!-- BUTTON -->
-  <button onclick="signup()">Create Account</button>
-
-  <!-- SWITCH -->
-  <p class="popup-switch signup-login">
-    Already have an account?
-    <span onclick="showLogin()">Login</span>
-  </p>
-
-</div>
-
-    </div>
-
-  </div>
-
-</div>
-
 
     <script src="js/auth.js"></script>
     <script src="js/home.js"></script>

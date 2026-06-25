@@ -19,21 +19,34 @@
 
   <body>
     <nav>
-      <div class="logo">
-          <a href="index.html">
-              <img src="images/logo-stackly (1).webp" alt="Stackly Logo">
-          </a>
+      <div class="logo-lg">
+        <a href="index.html">
+          <img src="images/logo-stackly (1).webp" alt="Stackly Logo" />
+        </a>
       </div>
 
       <ul class="nav-links">
+        <div class="mobile-menu-logo">
+          <img src="images/logo-stackly (1).webp" alt="Stackly Logo" />
+        </div>
+
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="service.html">Services</a></li>
         <li><a href="countries.html">Countries</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <div class="mobile-contact">
+          <h4>Contact Info</h4>
+          <p>📞 +91 98765 43210</p>
+          <p>✉ info@stackly.com</p>
+          <p>📍 Chennai, India</p>
+        </div>
       </ul>
 
-      <a  class="btn" onclick="openPopup()">Login</a>
+      <a class="btn" onclick="openPopup()"> Login </a>
+
+      <a class="mobile-login-btn" onclick="openPopup()"> Login </a>
 
       <div class="menu-btn">☰</div>
     </nav>
